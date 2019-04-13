@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">UARKRegisterApp</string>
+    <string name="app_name">LawnCareServicesApp</string>
     <string name="button_ok">OK</string>
     <string name="homepage_button_logout">Logout</string>
-    <string name="homepage_button_start_transaction">Start Transaction</string>
-    <string name="homepage_button_create_employee">Create Employee</string>
+    <string name="homepage_button_search">Search for Services</string>
+    <string name="homepage_button_list_of_services">List of Services</string>
+    <string name="homepage_button_create_client">Create Client</string>
     <string name="homepage_button_report_product">Sales Report: Product</string>
     <string name="homepage_button_report_cashier">Sales Report: Cashier</string>
     <string name="homepage_alert_dialog_unimplemented_title">Functionality not available</string>
@@ -36,15 +37,15 @@
     <string name="validation_product_lookup_code">Product lookup code may not be empty.</string>
     <string name="validation_product_count">Product count must be a number and may not be negative.</string>
     <string name="intent_extra_product">intent_extra_product</string>
-    <string name="title_activity_home_page">Home</string>
+    <string name="title_activity_home_page">Lawn Care Services Finder</string>
     <string name="title_activity_login">Welcome! Please log in.</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_employee_id">Employee ID</string>
+    <string name="prompt_client_id">Client ID</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Log in</string>
     <string name="action_sign_in_short">Log in</string>
-    <string name="error_invalid_employee_id">This Employee ID is invalid</string>
+    <string name="error_invalid_client_id">This Client ID is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
@@ -52,27 +53,43 @@
         completions."
     </string>
     <string name="login_error">Login Failed</string>
+    <string name="provider_box_click">Provider Role Selected...</string>
+    <string name="consumer_box_click">Consumer Role Selected...</string>
     <string name="login_loading">Loading...</string>
-    <string name="employee_check">Checking for employees...</string>
-    <string name="employee_check_error">Failed to get employee count</string>
-    <string name="alert_dialog_employee_loading">Creating new employee...</string>
-    <string name="alert_dialog_employee_load_success">Create employee!</string>
-    <string name="alert_dialog_employee_load_failure">Failed to load employees.</string>
-    <string name="title_activity_create_employee_view">Create Employee</string>
+    <string name="transaction_error">Transaction Failed</string>
+    <string name="transaction_loading">Transaction Loading...</string>
+    <string name="client_check">Checking for clients...</string>
+    <string name="client_check_error">Failed to get client count</string>
+    <string name="alert_dialog_client_loading">Creating new client...</string>
+    <string name="alert_dialog_client_load_success">Create client!</string>
+    <string name="alert_dialog_client_load_failure">Failed to load clients.</string>
+    <string name="title_activity_create_client_view">Create Client</string>
+    <string name="provider_role_switch">Provider</string>
+    <string name="consumer_role_switch">Consumer</string>
 
     <!-- String related to transactions -->
-    <string name="transaction_error">Uh oh, we failed to create new transaction</string>
-    <string name="transaction_loading">Creating new transaction...</string>
-    <string name="transaction_cancel">Cancel</string>
-    <string name="transaction_confirm">Checkout</string>
-    <string name="transaction_done">Done</string>
     <string name="title_activity_transaction_acitivty">Create Transaction</string>
     <string name="button_activity_transaction_review">Review Order</string>
     <string name="product_list_item_lookupCode">Lookup Code:</string>
     <string name="product_list_item_price">Price:</string>
     <string name="product_list_item_increment">+</string>
     <string name="product_list_item_decrement">-</string>
-    <string name="get_products_alert">Uh oh, we failed to fetch products</string>
-    <string name="loading_products">Loading products...</string>
+    <string name="unimplemented_button_click_transaction_title">Functionality not available</string>
+    <string name="unimplemented_button_click_transaction_subtitle">This has not been implemented</string>
+    <string name="get_products_alert">Something wen wrong while fetching product.</string>
+    <string name="loading_products">Loading Products...</string>
+    <string name="title_activity_messages">Messages</string>
+    <string name="action_settings">Settings</string>
+    <string name="large_text">Message Placeholder..</string>
+    <string name="transaction_cancel">Cancel</string>
+    <string name="transaction_confirm">Checkout</string>
+    <string name="transaction_done">Done</string>
+    <string name="title_activity_profile_page">ProfilePage</string>
 
+    <!-- Strings related to Settings -->
+    <string name="profile_overhead_text">PROFILE PAGE</string>
+    <string name="profile_first_name_business_name">First Name/Business Name</string>
+    <string name="profile_last_name_owner_name">Last Name/Owner Name</string>
+    <string name="profile_phone_number">Phone Number</string>
+    <string name="profile_email_address">Email Address</string>
 </resources>
