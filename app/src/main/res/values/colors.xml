@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#18398C</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorProviderButton">#C38757</color>
+    <color name="colorConsumerButton">#45A73D</color>
+    <color name="colorBackground">#1C1D3C</color>
+    <color name="colorEmailAccent">#FFFFFF</color>
+    <color name="colorPasswordAccent">#FFFFFF</color>
 </resources>
