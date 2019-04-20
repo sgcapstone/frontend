@@ -289,11 +289,9 @@ abstract class BaseRemoteService {
 	private static final String CONTENT_TYPE_REQUEST_PROPERTY = "Content-Type";
 
 	// IF YOU ON CONNECT TO AWS
-	private static final String BASE_URL = "https://";
+	private static final String BASE_URL = "http://finalcapstonedb.ccmat5myxbks.us-east-2.rds.amazonaws.com/";
 
 	// IF YOU ON STOCK ANDORID EMULATOR
-	// private static final String BASE_URL = "http://10.0.2.2:4000/api/";
+	 //private static final String BASE_URL = "http://10.0.2.2:4000/api/";
 
-    // IF YOU ON GENYMOTION (MAINLY FOR JARED) ''
-	// private static final String BASE_URL = "http://10.0.3.2:4000/api/";
 }

@@ -83,7 +83,7 @@ public class HomePageActivity extends AppCompatActivity {
     }
 
     public void ProfilePageOnClick(View view) {
-       // startActivity(new Intent(getApplicationContext(), ProfilePage.class));
+       startActivity(new Intent(getApplicationContext(), ProfilePage.class));
     }
 
     public void logoutButtonOnClick(View view) {

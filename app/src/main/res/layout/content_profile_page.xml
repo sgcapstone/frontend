@@ -1,16 +1,16 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout2"
-    android:layout_width="410dp"
-    android:layout_height="wrap_content"
-    android:gravity="center_vertical"
-    android:orientation="vertical"
-    android:visibility="visible"
-    tools:context="edu.uark.lawncareservicesapp.ProfilePage">
-
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/scrollView"
+android:layout_width="410dp"
+android:layout_height="wrap_content"
+android:gravity="center_vertical"
+android:orientation="vertical"
+android:visibility="visible"
+tools:context="edu.uark.lawncareservicesapp.ProfilePage">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -20,17 +20,10 @@
             android:layout_height="match_parent"
             android:layout_marginStart="90dp"
             android:contentDescription="@string/profile_overhead_text"
-            android:ems="70"
             android:text="@string/profile_overhead_text"
             android:paddingBottom="30dp"
             android:textColor="@android:color/black"
             android:textSize="30sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
         <TextView
             android:id="@+id/first_name"
@@ -38,51 +31,146 @@
             android:layout_height="match_parent"
             android:bufferType="spannable"
             android:contentDescription="@string/profile_first_name_business_name"
-            android:ems="10"
             android:paddingBottom="30dp"
             android:text="@string/profile_first_name_business_name"
             android:textAppearance="@style/TextAppearance.AppCompat"
             android:textColor="@android:color/black"
             android:visibility="visible"
             tools:text="@string/profile_first_name_business_name" />
-        <EditText
+
+        <TextView
+            android:id="@+id/FNBN_received"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+            android:text="" />
+
+
+        <TextView
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+            android:text="@string/profile_last_name_owner_name"
+            android:textColor="@android:color/black"
+           />
+
+        <TextView
+            android:id="@+id/LNON_received"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:ems="10"
+            android:paddingBottom="30dp"
+            android:text="@string/profile_phone_number"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/PN_received"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+            android:text=""
+            />
+
+
+        <TextView
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="email"
+            android:textColor="@android:color/black"
+            android:paddingBottom="30dp"
+            android:text="@string/profile_email_address"
+            />
+        <TextView
+            android:id="@+id/E_receieved"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:paddingBottom="30dp"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="email"
+            android:ems="10"
+            android:textColor="@android:color/black"
+            android:paddingBottom="30dp"
+            android:text="@string/profile_street_address"
+            />
+        <TextView
+            android:id="@+id/A_received"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:paddingBottom="30dp"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="email"
+            android:ems="10"
+            android:textColor="@android:color/black"
+            android:paddingBottom="30dp"
+            android:text="@string/profile_city"
+            />
+        <TextView
+            android:id="@+id/C_received"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:paddingBottom="30dp"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="email"
+            android:ems="10"
+            android:textColor="@android:color/black"
+            android:paddingBottom="30dp"
+            android:text="@string/profile_state"
+            />
+        <TextView
+            android:id="@+id/S_received"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:paddingBottom="30dp"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/zip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="email"
+            android:ems="10"
+            android:textColor="@android:color/black"
+            android:paddingBottom="30dp"
+            android:text="@string/profile_zip"
+            />
+        <TextView
+            android:id="@+id/Z_received"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:paddingBottom="30dp"
+            android:text=""
             />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/last_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:text="@string/profile_last_name_owner_name"
-        tools:layout_conversion_absoluteHeight="0dp"
-        tools:layout_conversion_absoluteWidth="0dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <TextView
-        android:id="@+id/phone_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autoLink="phone"
-        android:ems="10"
-        android:text="@string/profile_phone_number"
-        tools:layout_conversion_absoluteHeight="0dp"
-        tools:layout_conversion_absoluteWidth="0dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <TextView
-        android:id="@+id/email_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autoLink="email"
-        android:ems="10"
-        android:text="@string/profile_email_address"
-        tools:layout_conversion_absoluteHeight="0dp"
-        tools:layout_conversion_absoluteWidth="0dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-</LinearLayout>
+</ScrollView>

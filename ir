@@ -525,7 +525,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    compileSdkVersion 27[m
 [31m-    buildToolsVersion '27.0.3'[m
 [31m-    defaultConfig {[m
-[31m-        applicationId "edu.uark.uarkregisterapp"[m
+[31m-        applicationId "edu.uark.lawncareservicesapp"[m
 [31m-        minSdkVersion 17[m
 [31m-        targetSdkVersion 27[m
 [31m-        versionCode 1[m
@@ -555,20 +555,20 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    compile 'com.android.support:design:27.0.2'[m
 [31m-    testCompile 'junit:junit:4.12'[m
 [31m-}[m
-[1mdiff --git a/frontend/app/build/generated/source/buildConfig/debug/edu/uark/uarkregisterapp/BuildConfig.java b/frontend/app/build/generated/source/buildConfig/debug/edu/uark/uarkregisterapp/BuildConfig.java[m
+[1mdiff --git a/frontend/app/build/generated/source/buildConfig/debug/edu/uark/lawncareservicesapp/BuildConfig.java b/frontend/app/build/generated/source/buildConfig/debug/edu/uark/lawncareservicesapp/BuildConfig.java[m
 [1mdeleted file mode 100644[m
 [1mindex 1b8a7ba..0000000[m
-[1m--- a/frontend/app/build/generated/source/buildConfig/debug/edu/uark/uarkregisterapp/BuildConfig.java[m
+[1m--- a/frontend/app/build/generated/source/buildConfig/debug/edu/uark/lawncareservicesapp/BuildConfig.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,13 +0,0 @@[m
 [31m-/**[m
 [31m- * Automatically generated file. DO NOT MODIFY[m
 [31m- */[m
-[31m-package edu.uark.uarkregisterapp;[m
+[31m-package edu.uark.lawncareservicesapp;[m
 [31m-[m
 [31m-public final class BuildConfig {[m
 [31m-  public static final boolean DEBUG = Boolean.parseBoolean("true");[m
-[31m-  public static final String APPLICATION_ID = "edu.uark.uarkregisterapp";[m
+[31m-  public static final String APPLICATION_ID = "edu.uark.lawncareservicesapp";[m
 [31m-  public static final String BUILD_TYPE = "debug";[m
 [31m-  public static final String FLAVOR = "";[m
 [31m-  public static final int VERSION_CODE = 1;[m
@@ -597,13 +597,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {[m
 [31m-#   public *;[m
 [31m-#}[m
-[1mdiff --git a/frontend/app/src/androidTest/java/edu/uark/uarkregisterapp/ExampleInstrumentedTest.java b/frontend/app/src/androidTest/java/edu/uark/uarkregisterapp/ExampleInstrumentedTest.java[m
+[1mdiff --git a/frontend/app/src/androidTest/java/edu/uark/lawncareservicesapp/ExampleInstrumentedTest.java b/frontend/app/src/androidTest/java/edu/uark/lawncareservicesapp/ExampleInstrumentedTest.java[m
 [1mdeleted file mode 100644[m
 [1mindex c96155f..0000000[m
-[1m--- a/frontend/app/src/androidTest/java/edu/uark/uarkregisterapp/ExampleInstrumentedTest.java[m
+[1m--- a/frontend/app/src/androidTest/java/edu/uark/lawncareservicesapp/ExampleInstrumentedTest.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,26 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp;[m
+[31m-package edu.uark.lawncareservicesapp;[m
 [31m-[m
 [31m-import android.content.Context;[m
 [31m-import android.support.test.InstrumentationRegistry;[m
@@ -626,7 +626,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-		// Context of the app under test.[m
 [31m-		Context appContext = InstrumentationRegistry.getTargetContext();[m
 [31m-[m
-[31m-		assertEquals("edu.uark.uarkregisterapp", appContext.getPackageName());[m
+[31m-		assertEquals("edu.uark.lawncareservicesapp", appContext.getPackageName());[m
 [31m-	}[m
 [31m-}[m
 [1mdiff --git a/frontend/app/src/main/AndroidManifest.xml b/frontend/app/src/main/AndroidManifest.xml[m
@@ -637,7 +637,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [36m@@ -1,51 +0,0 @@[m
 [31m-<?xml version="1.0" encoding="utf-8"?>[m
 [31m-<manifest xmlns:android="http://schemas.android.com/apk/res/android"[m
-[31m-    package="edu.uark.uarkregisterapp">[m
+[31m-    package="edu.uark.lawncareservicesapp">[m
 [31m-[m
 [31m-    <uses-permission android:name="android.permission.INTERNET" />[m
 [31m-[m
@@ -668,16 +668,16 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            android:parentActivityName=".HomePageActivity">[m
 [31m-            <meta-data[m
 [31m-                android:name="android.support.PARENT_ACTIVITY"[m
-[31m-                android:value="edu.uark.uarkregisterapp.HomePageActivity" />[m
+[31m-                android:value="edu.uark.lawncareservicesapp.HomePageActivity" />[m
 [31m-        </activity>[m
 [31m-        <activity[m
-[31m-            android:name=".CreateEmployeeViewActivity"[m
-[31m-            android:label="@string/title_activity_create_employee_view"[m
+[31m-            android:name=".CreateClientViewActivity"[m
+[31m-            android:label="@string/title_activity_create_client_view"[m
 [31m-            android:parentActivityName=".HomePageActivity"[m
 [31m-            android:theme="@style/AppTheme.NoActionBar">[m
 [31m-            <meta-data[m
 [31m-                android:name="android.support.PARENT_ACTIVITY"[m
-[31m-                android:value="edu.uark.uarkregisterapp.HomePageActivity" />[m
+[31m-                android:value="edu.uark.lawncareservicesapp.HomePageActivity" />[m
 [31m-        </activity>[m
 [31m-        <activity[m
 [31m-            android:name=".TransactionAcitivty"[m
@@ -687,23 +687,23 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-</manifest>[m
 \ No newline at end of file[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/ApplicationState.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/ApplicationState.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/ApplicationState.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/ApplicationState.java[m
 [1mdeleted file mode 100644[m
 [1mindex 9780711..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/ApplicationState.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/ApplicationState.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,31 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp;[m
+[31m-package edu.uark.lawncareservicesapp;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.Employee;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Transaction;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Client;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Transaction;[m
 [31m-[m
 [31m-class ApplicationState {[m
-[31m-    static Employee getEmployee() {[m
-[31m-        return employee;[m
+[31m-    static Client getClient() {[m
+[31m-        return client;[m
 [31m-    }[m
-[31m-    static void setEmployee(Employee e) {[m
-[31m-        employee = e;[m
+[31m-    static void setClient(Client e) {[m
+[31m-        client = e;[m
 [31m-    }[m
 [31m-[m
 [31m-    static boolean isAuthenticated() {[m
@@ -720,17 +720,17 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        transaction = t;[m
 [31m-    }[m
 [31m-[m
-[31m-    private static Employee employee;[m
+[31m-    private static Client client;[m
 [31m-    private static boolean isAuthenticated;[m
 [31m-    private static Transaction transaction;[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/CreateEmployeeViewActivity.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/CreateEmployeeViewActivity.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/CreateClientViewActivity.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/CreateClientViewActivity.java[m
 [1mdeleted file mode 100644[m
 [1mindex 5ab60b7..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/CreateEmployeeViewActivity.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/CreateClientViewActivity.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,176 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp;[m
+[31m-package edu.uark.lawncareservicesapp;[m
 [31m-[m
 [31m-import android.annotation.SuppressLint;[m
 [31m-import android.content.DialogInterface;[m
@@ -748,72 +748,72 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.text.SimpleDateFormat;[m
 [31m-import java.util.Locale;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.ApiResponse;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Employee;[m
-[31m-import edu.uark.uarkregisterapp.models.api.services.EmployeeService;[m
-[31m-import edu.uark.uarkregisterapp.models.transition.EmployeeTransition;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.ApiResponse;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Client;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.services.ClientService;[m
+[31m-import edu.uark.lawncareservicesapp.models.transition.ClientTransition;[m
 [31m-[m
-[31m-public class CreateEmployeeViewActivity extends AppCompatActivity {[m
-[31m-    private EmployeeTransition employeeTransition;[m
+[31m-public class CreateClientViewActivity extends AppCompatActivity {[m
+[31m-    private ClientTransition clientTransition;[m
 [31m-[m
 [31m-    @SuppressLint("ResourceType")[m
 [31m-    @Override[m
 [31m-    protected void onCreate(Bundle savedInstanceState) {[m
 [31m-        super.onCreate(savedInstanceState);[m
-[31m-        setContentView(R.layout.activity_create_employee_view);[m
+[31m-        setContentView(R.layout.activity_create_client_view);[m
 [31m-        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));[m
 [31m-[m
-[31m-        saveButton = findViewById(R.id.createEmployeeSaveButton);[m
+[31m-        saveButton = findViewById(R.id.createClientSaveButton);[m
 [31m-[m
-[31m-        this.employeeTransition = this.getIntent().getParcelableExtra("intent_extra_employee");[m
+[31m-        this.clientTransition = this.getIntent().getParcelableExtra("intent_extra_client");[m
 [31m-    }[m
 [31m-[m
 [31m-    @Override[m
 [31m-    protected void onResume() {[m
 [31m-        super.onResume();[m
 [31m-[m
-[31m-        if (this.employeeTransition != null) {[m
-[31m-            this.getEmployeeFirstNameText().setText(this.employeeTransition.getFirstName());[m
-[31m-            this.getEmployeeLastNameText().setText(this.employeeTransition.getLastName());[m
+[31m-        if (this.clientTransition != null) {[m
+[31m-            this.getClientFirstNameText().setText(this.clientTransition.getFirstName());[m
+[31m-            this.getClientLastNameText().setText(this.clientTransition.getLastName());[m
 [31m-        }[m
 [31m-    }[m
 [31m-[m
-[31m-    private EditText getEmployeeFirstNameText(){[m
-[31m-        return (EditText) this.findViewById(R.id.edit_text_employee_first_name);[m
+[31m-    private EditText getClientFirstNameText(){[m
+[31m-        return (EditText) this.findViewById(R.id.edit_text_client_first_name);[m
 [31m-    }[m
 [31m-[m
-[31m-    private EditText getEmployeeLastNameText(){[m
-[31m-        return (EditText) this.findViewById(R.id.edit_text_employee_last_name);[m
+[31m-    private EditText getClientLastNameText(){[m
+[31m-        return (EditText) this.findViewById(R.id.edit_text_client_last_name);[m
 [31m-    }[m
 [31m-[m
-[31m-    private EditText getEmployeePasswordText(){[m
-[31m-        return (EditText) this.findViewById(R.id.edit_text_employee_password);[m
+[31m-    private EditText getClientPasswordText(){[m
+[31m-        return (EditText) this.findViewById(R.id.edit_text_client_password);[m
 [31m-    }[m
 [31m-[m
 [31m-    public void saveButtonOnClick(View view) {[m
-[31m-        String firstName = this.getEmployeeFirstNameText().getText().toString();[m
-[31m-        String lastName = this.getEmployeeLastNameText().getText().toString();[m
-[31m-        String password = this.getEmployeePasswordText().getText().toString();[m
+[31m-        String firstName = this.getClientFirstNameText().getText().toString();[m
+[31m-        String lastName = this.getClientLastNameText().getText().toString();[m
+[31m-        String password = this.getClientPasswordText().getText().toString();[m
 [31m-        if (!this.validateInput(firstName, lastName, password)) {[m
 [31m-            return;[m
 [31m-        }[m
-[31m-        Employee employee = new Employee();[m
-[31m-        employee.setFirstName(firstName);[m
-[31m-        employee.setLastName(lastName);[m
-[31m-        employee.setPassword(password);[m
-[31m-        (new CreateEmployeeViewActivity.CreateEmployeeTask()).execute(employee);[m
+[31m-        Client client = new Client();[m
+[31m-        client.setFirstName(firstName);[m
+[31m-        client.setLastName(lastName);[m
+[31m-        client.setPassword(password);[m
+[31m-        (new CreateClientViewActivity.CreateClientTask()).execute(client);[m
 [31m-    }[m
 [31m-[m
-[31m-    private class CreateEmployeeTask extends AsyncTask<Employee, Void, ApiResponse<Employee>> {[m
+[31m-    private class CreateClientTask extends AsyncTask<Client, Void, ApiResponse<Client>> {[m
 [31m-        @Override[m
 [31m-        protected void onPreExecute() {[m
-[31m-            this.loadingCreateEmployee.show();[m
+[31m-            this.loadingCreateClient.show();[m
 [31m-        }[m
 [31m-[m
 [31m-        @Override[m
-[31m-        protected ApiResponse<Employee> doInBackground(Employee... params) {[m
-[31m-            Employee employee = params[0];[m
-[31m-            ApiResponse<Employee> apiResponse = (new EmployeeService()).createEmployee(employee);[m
+[31m-        protected ApiResponse<Client> doInBackground(Client... params) {[m
+[31m-            Client client = params[0];[m
+[31m-            ApiResponse<Client> apiResponse = (new ClientService()).createClient(client);[m
 [31m-[m
 [31m-            if (apiResponse.isValidResponse()) {[m
 [31m-               // TODO: what do do if valid[m
@@ -823,12 +823,12 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        }[m
 [31m-[m
 [31m-        @Override[m
-[31m-        protected void onPostExecute(ApiResponse<Employee> apiResponse) {[m
-[31m-            this.loadingCreateEmployee.dismiss();[m
+[31m-        protected void onPostExecute(ApiResponse<Client> apiResponse) {[m
+[31m-            this.loadingCreateClient.dismiss();[m
 [31m-[m
 [31m-            if (!apiResponse.isValidResponse()) {[m
-[31m-                new AlertDialog.Builder(CreateEmployeeViewActivity.this).[m
-[31m-                        setMessage(R.string.alert_dialog_employee_load_failure).[m
+[31m-                new AlertDialog.Builder(CreateClientViewActivity.this).[m
+[31m-                        setMessage(R.string.alert_dialog_client_load_failure).[m
 [31m-                        setPositiveButton([m
 [31m-                                R.string.button_dismiss,[m
 [31m-                                new DialogInterface.OnClickListener() {[m
@@ -840,14 +840,14 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-                        create().[m
 [31m-                        show();[m
 [31m-            } else {[m
-[31m-                new AlertDialog.Builder(CreateEmployeeViewActivity.this).[m
-[31m-                        setMessage("Employee created!\n\nID: " + apiResponse.getData().getEmployeeId()).[m
+[31m-                new AlertDialog.Builder(CreateClientViewActivity.this).[m
+[31m-                        setMessage("Client created!\n\nID: " + apiResponse.getData().getClientId()).[m
 [31m-                        setPositiveButton([m
 [31m-                                R.string.button_dismiss,[m
 [31m-                                new DialogInterface.OnClickListener() {[m
 [31m-                                    public void onClick(DialogInterface dialog, int id) {[m
 [31m-                                        dialog.dismiss();[m
-[31m-                                        CreateEmployeeViewActivity.this.finish();[m
+[31m-                                        CreateClientViewActivity.this.finish();[m
 [31m-                                    }[m
 [31m-                                }[m
 [31m-                        ).[m
@@ -857,11 +857,11 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            }[m
 [31m-        }[m
 [31m-[m
-[31m-        private AlertDialog loadingCreateEmployee;[m
+[31m-        private AlertDialog loadingCreateClient;[m
 [31m-[m
-[31m-        private CreateEmployeeTask() {[m
-[31m-            this.loadingCreateEmployee = new AlertDialog.Builder(CreateEmployeeViewActivity.this).[m
-[31m-                    setMessage(R.string.alert_dialog_employee_loading).[m
+[31m-        private CreateClientTask() {[m
+[31m-            this.loadingCreateClient = new AlertDialog.Builder(CreateClientViewActivity.this).[m
+[31m-                    setMessage(R.string.alert_dialog_client_loading).[m
 [31m-                    create();[m
 [31m-        }[m
 [31m-    }[m
@@ -906,13 +906,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-    private Button saveButton;[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/HomePageActivity.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/HomePageActivity.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/HomePageActivity.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/HomePageActivity.java[m
 [1mdeleted file mode 100644[m
 [1mindex 8055a0c..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/HomePageActivity.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/HomePageActivity.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,114 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp;[m
+[31m-package edu.uark.lawncareservicesapp;[m
 [31m-[m
 [31m-import android.content.DialogInterface;[m
 [31m-import android.content.Intent;[m
@@ -924,8 +924,8 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import android.widget.Button;[m
 [31m-import android.widget.TextView;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.Employee;[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.EmployeeRole;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Client;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.ClientRole;[m
 [31m-[m
 [31m-public class HomePageActivity extends AppCompatActivity {[m
 [31m-[m
@@ -936,7 +936,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));[m
 [31m-[m
 [31m-        startTrasactionButton = findViewById(R.id.startTransactionButton);[m
-[31m-        createEmployeeButton = findViewById(R.id.createEmployeeButton);[m
+[31m-        createClientButton = findViewById(R.id.createClientButton);[m
 [31m-        salesReportProductButton = findViewById(R.id.salesReportProductButton);[m
 [31m-        salesReportProductCashier = findViewById(R.id.saleReportCashierButton);[m
 [31m-[m
@@ -949,38 +949,38 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            return;[m
 [31m-        }[m
 [31m-[m
-[31m-        Employee employee = ApplicationState.getEmployee();[m
+[31m-        Client client = ApplicationState.getClient();[m
 [31m-[m
 [31m-        String text =[m
 [31m-            getString(R.string.homepage_welcome_text_start) +[m
 [31m-            " " +[m
-[31m-            employee.getFirstName() +[m
+[31m-            client.getFirstName() +[m
 [31m-            getString(R.string.homepage_welcome_text_end);[m
 [31m-        welcomeText = findViewById(R.id.welcomeText);[m
 [31m-        welcomeText.setText(text);[m
 [31m-[m
-[31m-        EmployeeRole role = employee.getRole();[m
+[31m-        ClientRole role = client.getRole();[m
 [31m-[m
 [31m-        switch (role) {[m
 [31m-            case CASHIER:[m
 [31m-                startTrasactionButton.setVisibility(View.VISIBLE);[m
 [31m-                salesReportProductButton.setVisibility(View.INVISIBLE);[m
 [31m-                salesReportProductCashier.setVisibility(View.INVISIBLE);[m
-[31m-                createEmployeeButton.setVisibility(View.INVISIBLE);[m
+[31m-                createClientButton.setVisibility(View.INVISIBLE);[m
 [31m-                break;[m
 [31m-[m
 [31m-            case SHIFT_MANAGER:[m
 [31m-                startTrasactionButton.setVisibility(View.VISIBLE);[m
 [31m-                salesReportProductButton.setVisibility(View.VISIBLE);[m
 [31m-                salesReportProductCashier.setVisibility(View.VISIBLE);[m
-[31m-                createEmployeeButton.setVisibility(View.INVISIBLE);[m
+[31m-                createClientButton.setVisibility(View.INVISIBLE);[m
 [31m-                break;[m
 [31m-[m
 [31m-            case GENERAL_MANAGER:[m
 [31m-                startTrasactionButton.setVisibility(View.VISIBLE);[m
 [31m-                salesReportProductButton.setVisibility(View.VISIBLE);[m
 [31m-                salesReportProductCashier.setVisibility(View.VISIBLE);[m
-[31m-                createEmployeeButton.setVisibility(View.VISIBLE);[m
+[31m-                createClientButton.setVisibility(View.VISIBLE);[m
 [31m-                break;[m
 [31m-        }[m
 [31m-[m
@@ -1006,13 +1006,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-                show();[m
 [31m-    }[m
 [31m-[m
-[31m-    public void createEmployeeClick(View view) {[m
-[31m-        startActivity(new Intent(getApplicationContext(), CreateEmployeeViewActivity.class));[m
+[31m-    public void createClientClick(View view) {[m
+[31m-        startActivity(new Intent(getApplicationContext(), CreateClientViewActivity.class));[m
 [31m-    }[m
 [31m-[m
 [31m-    public void logoutButtonOnClick(View view) {[m
 [31m-        ApplicationState.setIsAuthenticated(false);[m
-[31m-        ApplicationState.setEmployee(null);[m
+[31m-        ApplicationState.setClient(null);[m
 [31m-        this.startLoginActivity();[m
 [31m-    }[m
 [31m-[m
@@ -1022,17 +1022,17 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-    private TextView welcomeText;[m
 [31m-    private Button startTrasactionButton;[m
-[31m-    private Button createEmployeeButton;[m
+[31m-    private Button createClientButton;[m
 [31m-    private Button salesReportProductButton;[m
 [31m-    private Button salesReportProductCashier;[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/LoginActivity.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/LoginActivity.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/LoginActivity.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/LoginActivity.java[m
 [1mdeleted file mode 100644[m
 [1mindex 8ffe65e..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/LoginActivity.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/LoginActivity.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,232 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp;[m
+[31m-package edu.uark.lawncareservicesapp;[m
 [31m-[m
 [31m-import android.annotation.TargetApi;[m
 [31m-import android.content.DialogInterface;[m
@@ -1055,9 +1055,9 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-import java.util.regex.Pattern;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.ApiResponse;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Employee;[m
-[31m-import edu.uark.uarkregisterapp.models.api.services.EmployeeService;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.ApiResponse;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Client;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.services.ClientService;[m
 [31m-[m
 [31m-public class LoginActivity extends AppCompatActivity {[m
 [31m-[m
@@ -1065,10 +1065,10 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    private static final String[] DUMMY_CREDENTIALS = new String[]{[m
 [31m-            "foo@example.com:hello", "bar@example.com:world"[m
 [31m-    };[m
-[31m-    private EmployeeLogInTask mAuthTask = null;[m
+[31m-    private ClientLogInTask mAuthTask = null;[m
 [31m-[m
 [31m-    // UI references.[m
-[31m-    private EditText mEmployeeId;[m
+[31m-    private EditText mClientId;[m
 [31m-    private EditText mPasswordView;[m
 [31m-    private LoginActivity that = this;[m
 [31m-[m
@@ -1078,7 +1078,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        setContentView(R.layout.activity_login);[m
 [31m-        setupActionBar();[m
 [31m-[m
-[31m-        mEmployeeId = findViewById(R.id.employeeId);[m
+[31m-        mClientId = findViewById(R.id.clientId);[m
 [31m-[m
 [31m-        mPasswordView = (EditText) findViewById(R.id.password);[m
 [31m-        mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {[m
@@ -1100,7 +1100,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            }[m
 [31m-        });[m
 [31m-[m
-[31m-        (new EmployeeCheckTask()).execute();[m
+[31m-        (new ClientCheckTask()).execute();[m
 [31m-[m
 [31m-    }[m
 [31m-[m
@@ -1123,11 +1123,11 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        }[m
 [31m-[m
 [31m-        // Reset errors.[m
-[31m-        mEmployeeId.setError(null);[m
+[31m-        mClientId.setError(null);[m
 [31m-        mPasswordView.setError(null);[m
 [31m-[m
 [31m-        // Store values at the time of the login attempt.[m
-[31m-        String employeeId = this.mEmployeeId.getText().toString();[m
+[31m-        String clientId = this.mClientId.getText().toString();[m
 [31m-        String password = mPasswordView.getText().toString();[m
 [31m-[m
 [31m-        boolean cancel = false;[m
@@ -1140,27 +1140,27 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            cancel = true;[m
 [31m-        }[m
 [31m-[m
-[31m-        // Check for a valid mEmployeeId.[m
-[31m-        if (TextUtils.isEmpty(employeeId)) {[m
-[31m-            this.mEmployeeId.setError(getString(R.string.error_field_required));[m
-[31m-            focusView = this.mEmployeeId;[m
+[31m-        // Check for a valid mClientId.[m
+[31m-        if (TextUtils.isEmpty(clientId)) {[m
+[31m-            this.mClientId.setError(getString(R.string.error_field_required));[m
+[31m-            focusView = this.mClientId;[m
 [31m-            cancel = true;[m
-[31m-        } else if (!isEmployeeIdValid(employeeId)) {[m
-[31m-            this.mEmployeeId.setError(getString(R.string.error_invalid_employee_id));[m
-[31m-            focusView = this.mEmployeeId;[m
+[31m-        } else if (!isClientIdValid(clientId)) {[m
+[31m-            this.mClientId.setError(getString(R.string.error_invalid_client_id));[m
+[31m-            focusView = this.mClientId;[m
 [31m-            cancel = true;[m
 [31m-        }[m
 [31m-[m
 [31m-        if (cancel) {[m
 [31m-            focusView.requestFocus();[m
 [31m-        } else {[m
-[31m-            mAuthTask = new EmployeeLogInTask();[m
-[31m-            mAuthTask.execute(employeeId, password);[m
+[31m-            mAuthTask = new ClientLogInTask();[m
+[31m-            mAuthTask.execute(clientId, password);[m
 [31m-[m
 [31m-        }[m
 [31m-    }[m
 [31m-[m
-[31m-    private boolean isEmployeeIdValid(String id) {[m
+[31m-    private boolean isClientIdValid(String id) {[m
 [31m-        return Pattern.matches("[a-zA-Z]+", id) == false;[m
 [31m-    }[m
 [31m-[m
@@ -1169,11 +1169,11 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        return password.length() > 0;[m
 [31m-    }[m
 [31m-[m
-[31m-    public class EmployeeCheckTask extends AsyncTask<Void, Void, ApiResponse<Integer>> {[m
+[31m-    public class ClientCheckTask extends AsyncTask<Void, Void, ApiResponse<Integer>> {[m
 [31m-[m
 [31m-        @Override[m
 [31m-        protected ApiResponse<Integer> doInBackground(Void... params) {[m
-[31m-            ApiResponse<Integer> apiResponse = (new EmployeeService()).check();[m
+[31m-            ApiResponse<Integer> apiResponse = (new ClientService()).check();[m
 [31m-            return apiResponse;[m
 [31m-        }[m
 [31m-[m
@@ -1183,14 +1183,14 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-                Integer count = apiResponse.getData();[m
 [31m-                if (count == 0){[m
 [31m-[m
-[31m-                    Intent createEmp = new Intent(getApplicationContext(),CreateEmployeeViewActivity.class);[m
+[31m-                    Intent createEmp = new Intent(getApplicationContext(),CreateClientViewActivity.class);[m
 [31m-                    startActivity(createEmp);[m
 [31m-                }[m
 [31m-[m
 [31m-[m
 [31m-            } else {[m
 [31m-                new AlertDialog.Builder(that).[m
-[31m-                        setMessage(R.string.employee_check_error).[m
+[31m-                        setMessage(R.string.client_check_error).[m
 [31m-                        setPositiveButton([m
 [31m-                                R.string.button_dismiss,[m
 [31m-                                new DialogInterface.OnClickListener() {[m
@@ -1206,21 +1206,21 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-        }[m
 [31m-[m
-[31m-        private EmployeeCheckTask() {}[m
+[31m-        private ClientCheckTask() {}[m
 [31m-    }[m
 [31m-[m
 [31m-[m
-[31m-    public class EmployeeLogInTask extends AsyncTask<String, Void, ApiResponse<Employee>> {[m
+[31m-    public class ClientLogInTask extends AsyncTask<String, Void, ApiResponse<Client>> {[m
 [31m-        @Override[m
-[31m-        protected ApiResponse<Employee> doInBackground(String... params) {[m
-[31m-            String employeeId = params[0];[m
+[31m-        protected ApiResponse<Client> doInBackground(String... params) {[m
+[31m-            String clientId = params[0];[m
 [31m-            String password = params[1];[m
 [31m-[m
-[31m-            ApiResponse<Employee> apiResponse = (new EmployeeService()).login(employeeId, password);[m
+[31m-            ApiResponse<Client> apiResponse = (new ClientService()).login(clientId, password);[m
 [31m-[m
 [31m-            if (apiResponse.isValidResponse()) {[m
 [31m-                ApplicationState.setIsAuthenticated(true);[m
-[31m-                ApplicationState.setEmployee(apiResponse.getData());[m
+[31m-                ApplicationState.setClient(apiResponse.getData());[m
 [31m-            }[m
 [31m-[m
 [31m-[m
@@ -1228,7 +1228,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        }[m
 [31m-[m
 [31m-        @Override[m
-[31m-        protected void onPostExecute(ApiResponse<Employee> apiResponse) {[m
+[31m-        protected void onPostExecute(ApiResponse<Client> apiResponse) {[m
 [31m-            this.loadingLogInAlert.dismiss();[m
 [31m-[m
 [31m-            if (!apiResponse.isValidResponse()) {[m
@@ -1256,7 +1256,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-        private AlertDialog loadingLogInAlert;[m
 [31m-[m
-[31m-        private EmployeeLogInTask() {[m
+[31m-        private ClientLogInTask() {[m
 [31m-            this.loadingLogInAlert = new AlertDialog.Builder(that).[m
 [31m-                    setMessage(R.string.login_loading).[m
 [31m-                    create();[m
@@ -1264,13 +1264,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    }[m
 [31m-}[m
 [31m-[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/TransactionAcitivty.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/TransactionAcitivty.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/TransactionAcitivty.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/TransactionAcitivty.java[m
 [1mdeleted file mode 100644[m
 [1mindex 2071a53..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/TransactionAcitivty.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/TransactionAcitivty.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,213 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp;[m
+[31m-package edu.uark.lawncareservicesapp;[m
 [31m-[m
 [31m-import android.content.DialogInterface;[m
 [31m-[m
@@ -1287,15 +1287,15 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.util.Iterator;[m
 [31m-import java.util.List;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.adapters.ProductCountListAdapter;[m
-[31m-import edu.uark.uarkregisterapp.models.api.ApiResponse;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Employee;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Product;[m
-[31m-import edu.uark.uarkregisterapp.models.api.ProductCount;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Transaction;[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.TransactionType;[m
-[31m-import edu.uark.uarkregisterapp.models.api.services.ProductService;[m
-[31m-import edu.uark.uarkregisterapp.models.api.services.TransactionService;[m
+[31m-import edu.uark.lawncareservicesapp.adapters.ProductCountListAdapter;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.ApiResponse;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Client;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Product;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.ProductCount;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Transaction;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.TransactionType;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.services.ProductService;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.services.TransactionService;[m
 [31m-[m
 [31m-public class TransactionAcitivty extends AppCompatActivity {[m
 [31m-[m
@@ -1344,10 +1344,10 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            ProductCount productCount = i.next();[m
 [31m-            total += productCount.getQuantity() * productCount.getProduct().getPrice();[m
 [31m-        }[m
-[31m-        Employee e = ApplicationState.getEmployee();[m
+[31m-        Client e = ApplicationState.getClient();[m
 [31m-        Transaction t =(new Transaction()[m
 [31m-                .setProducts(this.productCountList)[m
-[31m-                .setEmployeeId(e.getId())[m
+[31m-                .setClientId(e.getId())[m
 [31m-                .setAmount(total)[m
 [31m-                .setType(TransactionType.SALE));[m
 [31m-[m
@@ -1483,13 +1483,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    private CreateTransactionTask createTransactionTask = null;[m
 [31m-[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/adapters/ProductCountListAdapter.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/adapters/ProductCountListAdapter.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/adapters/ProductCountListAdapter.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/adapters/ProductCountListAdapter.java[m
 [1mdeleted file mode 100644[m
 [1mindex fd0c98f..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/adapters/ProductCountListAdapter.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/adapters/ProductCountListAdapter.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,146 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.adapters;[m
+[31m-package edu.uark.lawncareservicesapp.adapters;[m
 [31m-[m
 [31m-import android.content.Context;[m
 [31m-import android.support.annotation.NonNull;[m
@@ -1505,9 +1505,9 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.util.ArrayList;[m
 [31m-import java.util.List;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.R;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Product;[m
-[31m-import edu.uark.uarkregisterapp.models.api.ProductCount;[m
+[31m-import edu.uark.lawncareservicesapp.R;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Product;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.ProductCount;[m
 [31m-[m
 [31m-public class ProductCountListAdapter extends ArrayAdapter<ProductCount> implements Filterable {[m
 [31m-[m
@@ -1635,18 +1635,18 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    private List<ProductCount> masterProductCounts;[m
 [31m-    private List<ProductCount> productCounts;[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/converters/ByteToUUIDConverterCommand.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/converters/ByteToUUIDConverterCommand.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/converters/ByteToUUIDConverterCommand.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/converters/ByteToUUIDConverterCommand.java[m
 [1mdeleted file mode 100644[m
 [1mindex 8ea186e..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/converters/ByteToUUIDConverterCommand.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/converters/ByteToUUIDConverterCommand.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,24 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.commands.converters;[m
+[31m-package edu.uark.lawncareservicesapp.commands.converters;[m
 [31m-[m
 [31m-import java.nio.ByteBuffer;[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.commands.interfaces.ResultInterface;[m
+[31m-import edu.uark.lawncareservicesapp.commands.interfaces.ResultInterface;[m
 [31m-[m
 [31m-public class ByteToUUIDConverterCommand implements ResultInterface<UUID> {[m
 [31m-	@Override[m
@@ -1665,18 +1665,18 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-		return this;[m
 [31m-	}[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/converters/UUIDToByteConverterCommand.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/converters/UUIDToByteConverterCommand.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/converters/UUIDToByteConverterCommand.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/converters/UUIDToByteConverterCommand.java[m
 [1mdeleted file mode 100644[m
 [1mindex 534656d..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/converters/UUIDToByteConverterCommand.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/converters/UUIDToByteConverterCommand.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,26 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.commands.converters;[m
+[31m-package edu.uark.lawncareservicesapp.commands.converters;[m
 [31m-[m
 [31m-import java.nio.ByteBuffer;[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.commands.interfaces.ResultInterface;[m
+[31m-import edu.uark.lawncareservicesapp.commands.interfaces.ResultInterface;[m
 [31m-[m
 [31m-public class UUIDToByteConverterCommand implements ResultInterface<byte[]> {[m
 [31m-	@Override[m
@@ -1697,35 +1697,35 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-		return this;[m
 [31m-	}[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/interfaces/ResultInterface.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/interfaces/ResultInterface.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/interfaces/ResultInterface.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/interfaces/ResultInterface.java[m
 [1mdeleted file mode 100644[m
 [1mindex 2d7e09e..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/interfaces/ResultInterface.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/interfaces/ResultInterface.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,5 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.commands.interfaces;[m
+[31m-package edu.uark.lawncareservicesapp.commands.interfaces;[m
 [31m-[m
 [31m-public interface ResultInterface<T> {[m
 [31m-	T execute();[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/interfaces/VoidInterface.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/interfaces/VoidInterface.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/interfaces/VoidInterface.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/interfaces/VoidInterface.java[m
 [1mdeleted file mode 100644[m
 [1mindex a0a8251..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/commands/interfaces/VoidInterface.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/commands/interfaces/VoidInterface.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,5 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.commands.interfaces;[m
+[31m-package edu.uark.lawncareservicesapp.commands.interfaces;[m
 [31m-[m
 [31m-public interface VoidInterface {[m
 [31m-	void execute();[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/ApiResponse.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/ApiResponse.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/ApiResponse.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/ApiResponse.java[m
 [1mdeleted file mode 100644[m
 [1mindex a0704b2..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/ApiResponse.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/ApiResponse.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,58 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api;[m
+[31m-package edu.uark.lawncareservicesapp.models.api;[m
 [31m-[m
 [31m-import org.apache.commons.lang3.StringUtils;[m
 [31m-[m
@@ -1783,13 +1783,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        this.rawResponse = StringUtils.EMPTY;[m
 [31m-    }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/Employee.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/Employee.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/Client.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/Client.java[m
 [1mdeleted file mode 100644[m
 [1mindex 24f45ab..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/Employee.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/Client.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,207 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api;[m
+[31m-package edu.uark.lawncareservicesapp.models.api;[m
 [31m-[m
 [31m-import org.apache.commons.lang3.StringUtils;[m
 [31m-import org.json.JSONException;[m
@@ -1801,26 +1801,26 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.util.Locale;[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.EmployeeRole;[m
-[31m-import edu.uark.uarkregisterapp.models.api.fields.EmployeeFieldName;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.ConvertToJsonInterface;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.LoadFromJsonInterface;[m
-[31m-import edu.uark.uarkregisterapp.models.transition.EmployeeTransition;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.ClientRole;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.fields.ClientFieldName;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.ConvertToJsonInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.LoadFromJsonInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.transition.ClientTransition;[m
 [31m-[m
 [31m-[m
-[31m-public class Employee implements ConvertToJsonInterface, LoadFromJsonInterface<Employee> {[m
+[31m-public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Client> {[m
 [31m-    private UUID id;[m
 [31m-    public UUID getId() {[m
 [31m-        return this.id;[m
 [31m-    }[m
-[31m-    public Employee setId(UUID id) {[m
+[31m-    public Client setId(UUID id) {[m
 [31m-        this.id = id;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
 [31m-    private String password;[m
 [31m-    public String getPassword() { return this.password; }[m
-[31m-    public Employee setPassword(String password) {[m
+[31m-    public Client setPassword(String password) {[m
 [31m-        this.password = password;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -1829,7 +1829,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public String getFirstName() {[m
 [31m-        return firstName;[m
 [31m-    }[m
-[31m-    public Employee setFirstName(String firstName) {[m
+[31m-    public Client setFirstName(String firstName) {[m
 [31m-        this.firstName = firstName;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -1838,17 +1838,17 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public String getLastName() {[m
 [31m-        return lastName;[m
 [31m-    }[m
-[31m-    public Employee setLastName(String lastName) {[m
+[31m-    public Client setLastName(String lastName) {[m
 [31m-        this.lastName = lastName;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
-[31m-    private int employeeId;[m
-[31m-    public int getEmployeeId() {[m
-[31m-        return employeeId;[m
+[31m-    private int clientId;[m
+[31m-    public int getClientId() {[m
+[31m-        return clientId;[m
 [31m-    }[m
-[31m-    public Employee setEmployeeId(int employeeId) {[m
-[31m-        this.employeeId = employeeId;[m
+[31m-    public Client setClientId(int clientId) {[m
+[31m-        this.clientId = clientId;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
@@ -1856,16 +1856,16 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public boolean isActive() {[m
 [31m-        return active;[m
 [31m-    }[m
-[31m-    public Employee setActive(boolean active) {[m
+[31m-    public Client setActive(boolean active) {[m
 [31m-        this.active = active;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
-[31m-    private EmployeeRole role;[m
-[31m-    public EmployeeRole getRole() {[m
+[31m-    private ClientRole role;[m
+[31m-    public ClientRole getRole() {[m
 [31m-        return role;[m
 [31m-    }[m
-[31m-    public Employee setRole(EmployeeRole role) {[m
+[31m-    public Client setRole(ClientRole role) {[m
 [31m-        this.role = role;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -1874,7 +1874,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public String getManagerId() {[m
 [31m-        return managerId;[m
 [31m-    }[m
-[31m-    public Employee setManagerId(String managerId) {[m
+[31m-    public Client setManagerId(String managerId) {[m
 [31m-        this.managerId = managerId;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -1883,7 +1883,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public Date getCreatedAt() {[m
 [31m-        return createdAt;[m
 [31m-    }[m
-[31m-    public Employee setCreatedAt(Date createdAt) {[m
+[31m-    public Client setCreatedAt(Date createdAt) {[m
 [31m-        this.createdAt = createdAt;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -1892,17 +1892,17 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public Date getUpdatedAt() {[m
 [31m-        return updatedAt;[m
 [31m-    }[m
-[31m-    public Employee setUpdatedAt(Date updatedAt) {[m
+[31m-    public Client setUpdatedAt(Date updatedAt) {[m
 [31m-        this.updatedAt = updatedAt;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
-[31m-    public static JSONObject convertLogInToJson(String employeeId, String password){[m
+[31m-    public static JSONObject convertLogInToJson(String clientId, String password){[m
 [31m-        JSONObject jsonObject = new JSONObject();[m
 [31m-[m
 [31m-        try {[m
-[31m-            jsonObject.put(EmployeeFieldName.EMPLOYEE_ID.getFieldName(), employeeId);[m
-[31m-            jsonObject.put(EmployeeFieldName.PASSWORD.getFieldName(), password);[m
+[31m-            jsonObject.put(ClientFieldName.CLIENT_ID.getFieldName(), clientId);[m
+[31m-            jsonObject.put(ClientFieldName.PASSWORD.getFieldName(), password);[m
 [31m-        } catch (JSONException e) {[m
 [31m-            e.printStackTrace();[m
 [31m-        }[m
@@ -1911,25 +1911,25 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    }[m
 [31m-[m
 [31m-    @Override[m
-[31m-    public Employee loadFromJson(JSONObject rawJsonObject) {[m
-[31m-        String value = rawJsonObject.optString(EmployeeFieldName.ID.getFieldName());[m
+[31m-    public Client loadFromJson(JSONObject rawJsonObject) {[m
+[31m-        String value = rawJsonObject.optString(ClientFieldName.ID.getFieldName());[m
 [31m-        if (!StringUtils.isBlank(value)) {[m
 [31m-            this.id = UUID.fromString(value);[m
 [31m-        }[m
-[31m-        this.password = rawJsonObject.optString(EmployeeFieldName.PASSWORD.getFieldName());[m
-[31m-        this.firstName = rawJsonObject.optString(EmployeeFieldName.FIRST_NAME.getFieldName());[m
-[31m-        this.lastName = rawJsonObject.optString(EmployeeFieldName.LAST_NAME.getFieldName());[m
-[31m-        this.employeeId = rawJsonObject.optInt(EmployeeFieldName.EMPLOYEE_ID.getFieldName());[m
-[31m-        this.active = rawJsonObject.optBoolean(EmployeeFieldName.ACTIVE.getFieldName());[m
+[31m-        this.password = rawJsonObject.optString(ClientFieldName.PASSWORD.getFieldName());[m
+[31m-        this.firstName = rawJsonObject.optString(ClientFieldName.FIRST_NAME.getFieldName());[m
+[31m-        this.lastName = rawJsonObject.optString(ClientFieldName.LAST_NAME.getFieldName());[m
+[31m-        this.clientId = rawJsonObject.optInt(ClientFieldName.CLIENT_ID.getFieldName());[m
+[31m-        this.active = rawJsonObject.optBoolean(ClientFieldName.ACTIVE.getFieldName());[m
 [31m-[m
-[31m-        this.role = EmployeeRole.fromString(rawJsonObject.optString(EmployeeFieldName.ROLE.getFieldName()));[m
+[31m-        this.role = ClientRole.fromString(rawJsonObject.optString(ClientFieldName.ROLE.getFieldName()));[m
 [31m-        if (this.role == null) {[m
-[31m-            throw new Error("Invalid employee role.");[m
+[31m-            throw new Error("Invalid client role.");[m
 [31m-        }[m
 [31m-[m
-[31m-        this.managerId = rawJsonObject.optString(EmployeeFieldName.MANGER_ID.getFieldName());[m
+[31m-        this.managerId = rawJsonObject.optString(ClientFieldName.MANGER_ID.getFieldName());[m
 [31m-[m
-[31m-        value = rawJsonObject.optString(EmployeeFieldName.CREATED_AT.getFieldName());[m
+[31m-        value = rawJsonObject.optString(ClientFieldName.CREATED_AT.getFieldName());[m
 [31m-        if (!StringUtils.isBlank(value)) {[m
 [31m-            try {[m
 [31m-                this.createdAt = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US).parse(value);[m
@@ -1938,7 +1938,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            }[m
 [31m-        }[m
 [31m-[m
-[31m-        value = rawJsonObject.optString(EmployeeFieldName.UPDATED_AT.getFieldName());[m
+[31m-        value = rawJsonObject.optString(ClientFieldName.UPDATED_AT.getFieldName());[m
 [31m-        if (!StringUtils.isBlank(value)) {[m
 [31m-            try {[m
 [31m-                this.updatedAt = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US).parse(value);[m
@@ -1955,16 +1955,16 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        JSONObject jsonObject = new JSONObject();[m
 [31m-[m
 [31m-        try {[m
-[31m-            jsonObject.put(EmployeeFieldName.ID.getFieldName(), this.id.toString());[m
-[31m-            jsonObject.put(EmployeeFieldName.PASSWORD.getFieldName(), this.password.toString());[m
-[31m-            jsonObject.put(EmployeeFieldName.FIRST_NAME.getFieldName(), this.firstName);[m
-[31m-            jsonObject.put(EmployeeFieldName.LAST_NAME.getFieldName(), this.lastName);[m
-[31m-            jsonObject.put(EmployeeFieldName.EMPLOYEE_ID.getFieldName(), this.employeeId);[m
-[31m-            jsonObject.put(EmployeeFieldName.ACTIVE.getFieldName(), this.active);[m
-[31m-            jsonObject.put(EmployeeFieldName.ROLE.getFieldName(), this.role.getValue());[m
-[31m-            jsonObject.put(EmployeeFieldName.MANGER_ID.getFieldName(), this.managerId);[m
-[31m-            jsonObject.put(EmployeeFieldName.CREATED_AT.getFieldName(), (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US)).format(this.createdAt));[m
-[31m-            jsonObject.put(EmployeeFieldName.UPDATED_AT.getFieldName(), (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US)).format(this.createdAt));[m
+[31m-            jsonObject.put(ClientFieldName.ID.getFieldName(), this.id.toString());[m
+[31m-            jsonObject.put(ClientFieldName.PASSWORD.getFieldName(), this.password.toString());[m
+[31m-            jsonObject.put(ClientFieldName.FIRST_NAME.getFieldName(), this.firstName);[m
+[31m-            jsonObject.put(ClientFieldName.LAST_NAME.getFieldName(), this.lastName);[m
+[31m-            jsonObject.put(ClientFieldName.CLIENT_ID.getFieldName(), this.clientId);[m
+[31m-            jsonObject.put(ClientFieldName.ACTIVE.getFieldName(), this.active);[m
+[31m-            jsonObject.put(ClientFieldName.ROLE.getFieldName(), this.role.getValue());[m
+[31m-            jsonObject.put(ClientFieldName.MANGER_ID.getFieldName(), this.managerId);[m
+[31m-            jsonObject.put(ClientFieldName.CREATED_AT.getFieldName(), (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US)).format(this.createdAt));[m
+[31m-            jsonObject.put(ClientFieldName.UPDATED_AT.getFieldName(), (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US)).format(this.createdAt));[m
 [31m-        } catch (JSONException e) {[m
 [31m-            e.printStackTrace();[m
 [31m-        }[m
@@ -1972,37 +1972,37 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        return jsonObject;[m
 [31m-    }[m
 [31m-[m
-[31m-    public Employee() {[m
+[31m-    public Client() {[m
 [31m-        this.id = new UUID(0, 0);[m
 [31m-        this.password = "";[m
 [31m-        this.firstName = "";[m
 [31m-        this.lastName = "";[m
-[31m-        this.employeeId = -1;[m
+[31m-        this.clientId = -1;[m
 [31m-        this.active = false;[m
-[31m-        this.role = EmployeeRole.CASHIER;[m
+[31m-        this.role = ClientRole.CASHIER;[m
 [31m-        this.createdAt = new Date();[m
 [31m-        this.updatedAt = new Date();[m
 [31m-    }[m
 [31m-[m
-[31m-    public Employee(EmployeeTransition employeeTransition) {[m
-[31m-        this.id = employeeTransition.getId();[m
-[31m-        this.password = employeeTransition.getPassword();[m
-[31m-        this.firstName = employeeTransition.getFirstName();[m
-[31m-        this.lastName = employeeTransition.getLastName();[m
-[31m-        this.employeeId = employeeTransition.getEmployeeId();[m
-[31m-        this.active = employeeTransition.isActive();[m
-[31m-        this.role = employeeTransition.getRole();[m
-[31m-        this.createdAt = employeeTransition.getCreatedAt();[m
-[31m-        this.updatedAt = employeeTransition.getUpdatedAt();[m
+[31m-    public Client(ClientTransition clientTransition) {[m
+[31m-        this.id = clientTransition.getId();[m
+[31m-        this.password = clientTransition.getPassword();[m
+[31m-        this.firstName = clientTransition.getFirstName();[m
+[31m-        this.lastName = clientTransition.getLastName();[m
+[31m-        this.clientId = clientTransition.getClientId();[m
+[31m-        this.active = clientTransition.isActive();[m
+[31m-        this.role = clientTransition.getRole();[m
+[31m-        this.createdAt = clientTransition.getCreatedAt();[m
+[31m-        this.updatedAt = clientTransition.getUpdatedAt();[m
 [31m-    }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/Product.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/Product.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/Product.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/Product.java[m
 [1mdeleted file mode 100644[m
 [1mindex b00bf51..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/Product.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/Product.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,137 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api;[m
+[31m-package edu.uark.lawncareservicesapp.models.api;[m
 [31m-[m
 [31m-import org.apache.commons.lang3.StringUtils;[m
 [31m-import org.json.JSONException;[m
@@ -2014,10 +2014,10 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.util.Locale;[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.fields.ProductFieldName;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.ConvertToJsonInterface;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.LoadFromJsonInterface;[m
-[31m-import edu.uark.uarkregisterapp.models.transition.ProductTransition;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.fields.ProductFieldName;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.ConvertToJsonInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.LoadFromJsonInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.transition.ProductTransition;[m
 [31m-[m
 [31m-public class Product implements ConvertToJsonInterface, LoadFromJsonInterface<Product> {[m
 [31m-	private UUID id;[m
@@ -2139,23 +2139,23 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-		this.lookupCode = productTransition.getLookupCode();[m
 [31m-	}[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/ProductCount.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/ProductCount.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/ProductCount.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/ProductCount.java[m
 [1mdeleted file mode 100644[m
 [1mindex 5a6c8e6..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/ProductCount.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/ProductCount.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,59 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api;[m
+[31m-package edu.uark.lawncareservicesapp.models.api;[m
 [31m-[m
 [31m-import org.json.JSONException;[m
 [31m-import org.json.JSONObject;[m
 [31m-[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.fields.ProductCountFieldName;[m
-[31m-import edu.uark.uarkregisterapp.models.api.fields.ProductFieldName;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.ConvertToJsonInterface;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.LoadFromJsonInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.fields.ProductCountFieldName;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.fields.ProductFieldName;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.ConvertToJsonInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.LoadFromJsonInterface;[m
 [31m-[m
 [31m-/**[m
 [31m- * Created by jaredramirez on 4/15/18.[m
@@ -2204,13 +2204,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        quantity = q;[m
 [31m-    }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/Transaction.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/Transaction.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/Transaction.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/Transaction.java[m
 [1mdeleted file mode 100644[m
 [1mindex 3fa619f..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/Transaction.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/Transaction.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,198 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api;[m
+[31m-package edu.uark.lawncareservicesapp.models.api;[m
 [31m-[m
 [31m-import android.util.Log;[m
 [31m-[m
@@ -2227,13 +2227,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.util.Locale;[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.TransactionType;[m
-[31m-import edu.uark.uarkregisterapp.models.api.fields.ProductFieldName;[m
-[31m-import edu.uark.uarkregisterapp.models.api.fields.TransactionFieldName;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.ConvertToJsonInterface;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.LoadFromJsonInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.TransactionType;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.fields.ProductFieldName;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.fields.TransactionFieldName;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.ConvertToJsonInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.LoadFromJsonInterface;[m
 [31m-[m
-[31m-import static edu.uark.uarkregisterapp.models.api.enums.TransactionType.SALE;[m
+[31m-import static edu.uark.lawncareservicesapp.models.api.enums.TransactionType.SALE;[m
 [31m-[m
 [31m-/**[m
 [31m- * Created by jaredramirez on 4/15/18.[m
@@ -2249,12 +2249,12 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
-[31m-    private UUID employeeId;[m
-[31m-    public UUID getEmployeeId() {[m
-[31m-        return this.employeeId;[m
+[31m-    private UUID clientId;[m
+[31m-    public UUID getClientId() {[m
+[31m-        return this.clientId;[m
 [31m-    }[m
-[31m-    public Transaction setEmployeeId(UUID employeeId) {[m
-[31m-        this.employeeId = employeeId;[m
+[31m-    public Transaction setClientId(UUID clientId) {[m
+[31m-        this.clientId = clientId;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
@@ -2280,8 +2280,8 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public UUID getRefId() {[m
 [31m-        return this.refId;[m
 [31m-    }[m
-[31m-    public Transaction setRefId(UUID employeeId) {[m
-[31m-        this.refId = employeeId;[m
+[31m-    public Transaction setRefId(UUID clientId) {[m
+[31m-        this.refId = clientId;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
@@ -2329,9 +2329,9 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            this.id = UUID.fromString(id);[m
 [31m-        }[m
 [31m-[m
-[31m-        String employeeId = rawJsonObject.optString(TransactionFieldName.EMPLOYEE_ID.getFieldName());[m
-[31m-        if (!StringUtils.isBlank(employeeId)) {[m
-[31m-            this.employeeId = UUID.fromString(employeeId);[m
+[31m-        String clientId = rawJsonObject.optString(TransactionFieldName.CLIENT_ID.getFieldName());[m
+[31m-        if (!StringUtils.isBlank(clientId)) {[m
+[31m-            this.clientId = UUID.fromString(clientId);[m
 [31m-        }[m
 [31m-[m
 [31m-        this.amount = rawJsonObject.optInt(TransactionFieldName.AMOUNT.getFieldName());[m
@@ -2370,8 +2370,8 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-        try {[m
 [31m-            jsonObject.put(TransactionFieldName.ID.getFieldName(), this.id.toString());[m
-[31m-            if (this.employeeId != null) {[m
-[31m-                jsonObject.put(TransactionFieldName.EMPLOYEE_ID.getFieldName(), this.employeeId.toString());[m
+[31m-            if (this.clientId != null) {[m
+[31m-                jsonObject.put(TransactionFieldName.CLIENT_ID.getFieldName(), this.clientId.toString());[m
 [31m-            }[m
 [31m-            jsonObject.put(TransactionFieldName.AMOUNT.getFieldName(), this.amount);[m
 [31m-[m
@@ -2398,7 +2398,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-    public Transaction() {[m
 [31m-        this.id = new UUID(0, 0);[m
-[31m-        this.employeeId = null;[m
+[31m-        this.clientId = null;[m
 [31m-        this.amount = 0;[m
 [31m-        this.type = SALE;[m
 [31m-        this.refId = null;[m
@@ -2408,20 +2408,20 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        this.updatedAt = new Date();[m
 [31m-    }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/ApiObject.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/ApiObject.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/ApiObject.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/ApiObject.java[m
 [1mdeleted file mode 100644[m
 [1mindex 2c914c5..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/ApiObject.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/ApiObject.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,21 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.enums;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.enums;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.PathElementInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.PathElementInterface;[m
 [31m-[m
 [31m-public enum ApiObject implements PathElementInterface {[m
 [31m-    NONE(""),[m
 [31m-    PRODUCT("product/"),[m
-[31m-    EMPLOYEE("employee/"),[m
+[31m-    CLIENT("client/"),[m
 [31m-    TRANSACTION("transaction/");[m
 [31m-[m
 [31m-    @Override[m
@@ -2435,27 +2435,27 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        this.value = value;[m
 [31m-    }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/EmployeeRole.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/EmployeeRole.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/ClientRole.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/ClientRole.java[m
 [1mdeleted file mode 100644[m
 [1mindex 156b1af..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/EmployeeRole.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/ClientRole.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,33 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.enums;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.enums;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.PathElementInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.PathElementInterface;[m
 [31m-[m
 [31m-/**[m
 [31m- * Created by jaredramirez on 3/2/18.[m
 [31m- */[m
 [31m-[m
-[31m-public enum EmployeeRole {[m
+[31m-public enum ClientRole {[m
 [31m-    CASHIER("cashier"),[m
 [31m-    SHIFT_MANAGER("shift manager"),[m
 [31m-    GENERAL_MANAGER("general manager");[m
 [31m-[m
-[31m-    public static EmployeeRole fromString(String text) {[m
-[31m-        for (EmployeeRole b : EmployeeRole.values()) {[m
+[31m-    public static ClientRole fromString(String text) {[m
+[31m-        for (ClientRole b : ClientRole.values()) {[m
 [31m-            if (b.value.equalsIgnoreCase(text)) {[m
 [31m-                return b;[m
 [31m-            }[m
@@ -2469,23 +2469,23 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        return value;[m
 [31m-    }[m
 [31m-[m
-[31m-    EmployeeRole(String value) {[m
+[31m-    ClientRole(String value) {[m
 [31m-        this.value = value;[m
 [31m-    }[m
 [31m-[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/ProductApiMethod.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/ProductApiMethod.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/ProductApiMethod.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/ProductApiMethod.java[m
 [1mdeleted file mode 100644[m
 [1mindex 23ff049..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/ProductApiMethod.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/ProductApiMethod.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,22 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.enums;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.enums;[m
 [31m-[m
 [31m-import java.util.HashMap;[m
 [31m-import java.util.Map;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.PathElementInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.PathElementInterface;[m
 [31m-[m
 [31m-public enum ProductApiMethod implements PathElementInterface {[m
 [31m-	NONE(""),[m
@@ -2502,15 +2502,15 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-		this.value = value;[m
 [31m-	}[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/TransactionType.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/TransactionType.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/TransactionType.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/TransactionType.java[m
 [1mdeleted file mode 100644[m
 [1mindex 5b08a74..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/enums/TransactionType.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/enums/TransactionType.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,32 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.enums;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.enums;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.Transaction;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Transaction;[m
 [31m-[m
 [31m-/**[m
 [31m- * Created by jaredramirez on 4/15/18.[m
@@ -2540,21 +2540,21 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        }[m
 [31m-    }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/EmployeeFieldName.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/EmployeeFieldName.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ClientFieldName.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ClientFieldName.java[m
 [1mdeleted file mode 100644[m
 [1mindex 32799e3..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/EmployeeFieldName.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ClientFieldName.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,27 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.fields;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.fields;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.FieldNameInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.FieldNameInterface;[m
 [31m-[m
-[31m-public enum EmployeeFieldName implements FieldNameInterface {[m
+[31m-public enum ClientFieldName implements FieldNameInterface {[m
 [31m-    ID("id"),[m
 [31m-    FIRST_NAME("firstName"),[m
 [31m-    LAST_NAME("lastName"),[m
-[31m-    EMPLOYEE_ID("employeeId"),[m
+[31m-    CLIENT_ID("clientId"),[m
 [31m-    ACTIVE("active"),[m
 [31m-    ROLE("role"),[m
 [31m-    MANGER_ID("managerId"),[m
@@ -2569,19 +2569,19 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        return this.fieldName;[m
 [31m-    }[m
 [31m-[m
-[31m-    EmployeeFieldName(String fieldName) {[m
+[31m-    ClientFieldName(String fieldName) {[m
 [31m-        this.fieldName = fieldName;[m
 [31m-    }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/ProductCountFieldName.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/ProductCountFieldName.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ProductCountFieldName.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ProductCountFieldName.java[m
 [1mdeleted file mode 100644[m
 [1mindex 1599f2d..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/ProductCountFieldName.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ProductCountFieldName.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,23 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.fields;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.fields;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.FieldNameInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.FieldNameInterface;[m
 [31m-[m
 [31m-/**[m
 [31m- * Created by jaredramirez on 4/15/18.[m
@@ -2602,15 +2602,15 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    }[m
 [31m-}[m
 [31m-[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/ProductFieldName.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/ProductFieldName.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ProductFieldName.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ProductFieldName.java[m
 [1mdeleted file mode 100644[m
 [1mindex 8cceee2..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/ProductFieldName.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ProductFieldName.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,21 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.fields;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.fields;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.FieldNameInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.FieldNameInterface;[m
 [31m-[m
 [31m-public enum ProductFieldName implements FieldNameInterface {[m
 [31m-	ID("id"),[m
@@ -2629,15 +2629,15 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-		this.fieldName = fieldName;[m
 [31m-	}[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/ProductListingFieldName.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/ProductListingFieldName.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ProductListingFieldName.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ProductListingFieldName.java[m
 [1mdeleted file mode 100644[m
 [1mindex 3cf8d5e..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/ProductListingFieldName.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/ProductListingFieldName.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,16 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.fields;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.fields;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.FieldNameInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.FieldNameInterface;[m
 [31m-[m
 [31m-public enum ProductListingFieldName implements FieldNameInterface {[m
 [31m-	PRODUCTS("products");[m
@@ -2651,15 +2651,15 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-		this.fieldName = fieldName;[m
 [31m-	}[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/TransactionFieldName.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/TransactionFieldName.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/TransactionFieldName.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/TransactionFieldName.java[m
 [1mdeleted file mode 100644[m
 [1mindex a350e76..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/fields/TransactionFieldName.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/fields/TransactionFieldName.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,28 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.fields;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.fields;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.FieldNameInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.FieldNameInterface;[m
 [31m-[m
 [31m-/**[m
 [31m- * Created by jaredramirez on 4/15/18.[m
@@ -2667,7 +2667,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-public enum TransactionFieldName implements FieldNameInterface {[m
 [31m-    ID("id"),[m
-[31m-    EMPLOYEE_ID("employeeId"),[m
+[31m-    CLIENT_ID("clientId"),[m
 [31m-    AMOUNT("amount"),[m
 [31m-    TYPE("type"),[m
 [31m-    REF_ID("refId"),[m
@@ -2685,61 +2685,61 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        this.fieldName = fieldName;[m
 [31m-    }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/ConvertToJsonInterface.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/ConvertToJsonInterface.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/ConvertToJsonInterface.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/ConvertToJsonInterface.java[m
 [1mdeleted file mode 100644[m
 [1mindex 10269f1..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/ConvertToJsonInterface.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/ConvertToJsonInterface.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,7 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.interfaces;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.interfaces;[m
 [31m-[m
 [31m-import org.json.JSONObject;[m
 [31m-[m
 [31m-public interface ConvertToJsonInterface {[m
 [31m-	JSONObject convertToJson();[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/FieldNameInterface.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/FieldNameInterface.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/FieldNameInterface.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/FieldNameInterface.java[m
 [1mdeleted file mode 100644[m
 [1mindex 4536b9e..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/FieldNameInterface.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/FieldNameInterface.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,5 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.interfaces;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.interfaces;[m
 [31m-[m
 [31m-public interface FieldNameInterface {[m
 [31m-	String getFieldName();[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/LoadFromJsonInterface.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/LoadFromJsonInterface.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/LoadFromJsonInterface.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/LoadFromJsonInterface.java[m
 [1mdeleted file mode 100644[m
 [1mindex 3f03612..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/LoadFromJsonInterface.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/LoadFromJsonInterface.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,7 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.interfaces;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.interfaces;[m
 [31m-[m
 [31m-import org.json.JSONObject;[m
 [31m-[m
 [31m-public interface LoadFromJsonInterface<T> {[m
 [31m-	T loadFromJson(JSONObject rawJsonObject);[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/PathElementInterface.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/PathElementInterface.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/PathElementInterface.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/PathElementInterface.java[m
 [1mdeleted file mode 100644[m
 [1mindex 00d7686..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/interfaces/PathElementInterface.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/interfaces/PathElementInterface.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,5 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.interfaces;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.interfaces;[m
 [31m-[m
 [31m-public interface PathElementInterface {[m
 [31m-	String getPathValue();[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/BaseRemoteService.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/BaseRemoteService.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/BaseRemoteService.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/BaseRemoteService.java[m
 [1mdeleted file mode 100644[m
 [1mindex 43f4cde..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/BaseRemoteService.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/BaseRemoteService.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,300 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.services;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.services;[m
 [31m-[m
 [31m-import org.apache.commons.lang3.StringUtils;[m
 [31m-import org.json.JSONArray;[m
@@ -2755,9 +2755,9 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.net.URL;[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.ApiResponse;[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.ApiObject;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.PathElementInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.ApiResponse;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.ApiObject;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.PathElementInterface;[m
 [31m-[m
 [31m-abstract class BaseRemoteService {[m
 [31m-	URL buildPath() {[m
@@ -3039,13 +3039,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    // IF YOU ON GENYMOTION (MAINLY FOR JARED) ''[m
 [31m-	// private static final String BASE_URL = "http://10.0.3.2:4000/api/";[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/EmployeeService.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/EmployeeService.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/ClientService.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/ClientService.java[m
 [1mdeleted file mode 100644[m
 [1mindex 443a7e5..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/EmployeeService.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/ClientService.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,83 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.services;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.services;[m
 [31m-[m
 [31m-import android.app.AlertDialog;[m
 [31m-import android.content.Intent;[m
@@ -3059,25 +3059,25 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-import javax.net.ssl.HttpsURLConnection;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.R;[m
-[31m-import edu.uark.uarkregisterapp.models.api.ApiResponse;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Employee;[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.ApiObject;[m
+[31m-import edu.uark.lawncareservicesapp.R;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.ApiResponse;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Client;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.ApiObject;[m
 [31m-[m
-[31m-public class EmployeeService extends BaseRemoteService {[m
-[31m-    public ApiResponse<Employee> getEmployee(UUID employeeId) {[m
-[31m-        return this.readEmployeeDetailsFromResponse([m
-[31m-                this.<Employee>performGetRequest([m
-[31m-                        this.buildPath(employeeId)[m
+[31m-public class ClientService extends BaseRemoteService {[m
+[31m-    public ApiResponse<Client> getClient(UUID clientId) {[m
+[31m-        return this.readClientDetailsFromResponse([m
+[31m-                this.<Client>performGetRequest([m
+[31m-                        this.buildPath(clientId)[m
 [31m-                )[m
 [31m-        );[m
 [31m-    }[m
 [31m-[m
-[31m-    public ApiResponse<Employee> login(String employeeId, String password){[m
-[31m-        return this.readEmployeeDetailsFromResponse([m
-[31m-                this.<Employee>performPostRequest([m
+[31m-    public ApiResponse<Client> login(String clientId, String password){[m
+[31m-        return this.readClientDetailsFromResponse([m
+[31m-                this.<Client>performPostRequest([m
 [31m-                        this.buildPath("login"),[m
-[31m-                        Employee.convertLogInToJson(employeeId,password)[m
+[31m-                        Client.convertLogInToJson(clientId,password)[m
 [31m-                )[m
 [31m-        );[m
 [31m-    }[m
@@ -3090,23 +3090,23 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        );[m
 [31m-    }[m
 [31m-[m
-[31m-    public ApiResponse<Employee> createEmployee(Employee employee){[m
-[31m-        return this.readEmployeeDetailsFromResponse([m
-[31m-                this.<Employee>performPostRequest([m
+[31m-    public ApiResponse<Client> createClient(Client client){[m
+[31m-        return this.readClientDetailsFromResponse([m
+[31m-                this.<Client>performPostRequest([m
 [31m-                        this.buildPath(),[m
-[31m-                        employee.convertToJson()[m
+[31m-                        client.convertToJson()[m
 [31m-                )[m
 [31m-        );[m
 [31m-    }[m
 [31m-[m
-[31m-    private ApiResponse<Employee> readEmployeeDetailsFromResponse(ApiResponse<Employee> apiResponse) {[m
+[31m-    private ApiResponse<Client> readClientDetailsFromResponse(ApiResponse<Client> apiResponse) {[m
 [31m-        JSONObject rawJsonObject = this.rawResponseToJSONObject([m
 [31m-                apiResponse.getRawResponse()[m
 [31m-        );[m
 [31m-[m
 [31m-        if (rawJsonObject != null) {[m
 [31m-            apiResponse.setData([m
-[31m-                    (new Employee()).loadFromJson(rawJsonObject)[m
+[31m-                    (new Client()).loadFromJson(rawJsonObject)[m
 [31m-            );[m
 [31m-        }[m
 [31m-[m
@@ -3126,15 +3126,15 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-    [m
 [31m-[m
-[31m-    public EmployeeService() { super(ApiObject.EMPLOYEE); }[m
+[31m-    public ClientService() { super(ApiObject.CLIENT); }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/ProductService.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/ProductService.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/ProductService.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/ProductService.java[m
 [1mdeleted file mode 100644[m
 [1mindex ed4f348..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/ProductService.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/ProductService.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,102 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.services;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.services;[m
 [31m-[m
 [31m-import android.util.Log;[m
 [31m-[m
@@ -3146,11 +3146,11 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.util.List;[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.ApiResponse;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Product;[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.ApiObject;[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.ProductApiMethod;[m
-[31m-import edu.uark.uarkregisterapp.models.api.interfaces.PathElementInterface;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.ApiResponse;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Product;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.ApiObject;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.ProductApiMethod;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.interfaces.PathElementInterface;[m
 [31m-[m
 [31m-public class ProductService extends BaseRemoteService {[m
 [31m-	public ApiResponse<Product> getProduct(UUID productId) {[m
@@ -3236,19 +3236,19 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-	public ProductService() { super(ApiObject.PRODUCT); }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/TransactionService.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/TransactionService.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/TransactionService.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/TransactionService.java[m
 [1mdeleted file mode 100644[m
 [1mindex 035be06..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/api/services/TransactionService.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/api/services/TransactionService.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,33 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.api.services;[m
+[31m-package edu.uark.lawncareservicesapp.models.api.services;[m
 [31m-[m
 [31m-import org.json.JSONObject;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.models.api.ApiResponse;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Transaction;[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.ApiObject;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.ApiResponse;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Transaction;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.ApiObject;[m
 [31m-[m
 [31m-/**[m
 [31m- * Created by jaredramirez on 4/15/18.[m
@@ -3275,13 +3275,13 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-    public TransactionService() { super(ApiObject.TRANSACTION); }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/transition/EmployeeTransition.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/transition/EmployeeTransition.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/transition/ClientTransition.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/transition/ClientTransition.java[m
 [1mdeleted file mode 100644[m
 [1mindex d241cc3..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/transition/EmployeeTransition.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/transition/ClientTransition.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,174 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.transition;[m
+[31m-package edu.uark.lawncareservicesapp.models.transition;[m
 [31m-[m
 [31m-import android.os.Parcel;[m
 [31m-import android.os.Parcelable;[m
@@ -3291,25 +3291,25 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.util.Date;[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.commands.converters.ByteToUUIDConverterCommand;[m
-[31m-import edu.uark.uarkregisterapp.commands.converters.UUIDToByteConverterCommand;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Product;[m
-[31m-import edu.uark.uarkregisterapp.models.api.enums.EmployeeRole;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Employee;[m
+[31m-import edu.uark.lawncareservicesapp.commands.converters.ByteToUUIDConverterCommand;[m
+[31m-import edu.uark.lawncareservicesapp.commands.converters.UUIDToByteConverterCommand;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Product;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.enums.ClientRole;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Client;[m
 [31m-[m
-[31m-public class EmployeeTransition implements Parcelable {[m
+[31m-public class ClientTransition implements Parcelable {[m
 [31m-    private UUID id;[m
 [31m-    public UUID getId() {[m
 [31m-        return this.id;[m
 [31m-    }[m
-[31m-    public EmployeeTransition setId(UUID id) {[m
+[31m-    public ClientTransition setId(UUID id) {[m
 [31m-        this.id = id;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
 [31m-    private String password;[m
 [31m-    public String  getPassword() { return this.password; }[m
-[31m-    public EmployeeTransition setPassword(String password) {[m
+[31m-    public ClientTransition setPassword(String password) {[m
 [31m-        this.password = password;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -3318,7 +3318,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public String getFirstName() {[m
 [31m-        return firstName;[m
 [31m-    }[m
-[31m-    public EmployeeTransition setFirstName(String firstName) {[m
+[31m-    public ClientTransition setFirstName(String firstName) {[m
 [31m-        this.firstName = firstName;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -3327,17 +3327,17 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public String getLastName() {[m
 [31m-        return lastName;[m
 [31m-    }[m
-[31m-    public EmployeeTransition setLastName(String lastName) {[m
+[31m-    public ClientTransition setLastName(String lastName) {[m
 [31m-        this.lastName = lastName;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
-[31m-    private int employeeId;[m
-[31m-    public int getEmployeeId() {[m
-[31m-        return employeeId;[m
+[31m-    private int clientId;[m
+[31m-    public int getClientId() {[m
+[31m-        return clientId;[m
 [31m-    }[m
-[31m-    public EmployeeTransition setEmployeeId(int employeeId) {[m
-[31m-        this.employeeId = employeeId;[m
+[31m-    public ClientTransition setClientId(int clientId) {[m
+[31m-        this.clientId = clientId;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
@@ -3345,16 +3345,16 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public boolean isActive() {[m
 [31m-        return active;[m
 [31m-    }[m
-[31m-    public EmployeeTransition setActive(boolean active) {[m
+[31m-    public ClientTransition setActive(boolean active) {[m
 [31m-        this.active = active;[m
 [31m-        return this;[m
 [31m-    }[m
 [31m-[m
-[31m-    private EmployeeRole role;[m
-[31m-    public EmployeeRole getRole() {[m
+[31m-    private ClientRole role;[m
+[31m-    public ClientRole getRole() {[m
 [31m-        return role;[m
 [31m-    }[m
-[31m-    public EmployeeTransition setRole(EmployeeRole role) {[m
+[31m-    public ClientTransition setRole(ClientRole role) {[m
 [31m-        this.role = role;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -3363,7 +3363,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public String getManagerId() {[m
 [31m-        return managerId;[m
 [31m-    }[m
-[31m-    public EmployeeTransition setManagerId(String managerId) {[m
+[31m-    public ClientTransition setManagerId(String managerId) {[m
 [31m-        this.managerId = managerId;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -3372,7 +3372,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public Date getCreatedAt() {[m
 [31m-        return createdAt;[m
 [31m-    }[m
-[31m-    public EmployeeTransition setCreatedAt(Date createdAt) {[m
+[31m-    public ClientTransition setCreatedAt(Date createdAt) {[m
 [31m-        this.createdAt = createdAt;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -3381,7 +3381,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    public Date getUpdatedAt() {[m
 [31m-        return updatedAt;[m
 [31m-    }[m
-[31m-    public EmployeeTransition setUpdatedAt(Date updatedAt) {[m
+[31m-    public ClientTransition setUpdatedAt(Date updatedAt) {[m
 [31m-        this.updatedAt = updatedAt;[m
 [31m-        return this;[m
 [31m-    }[m
@@ -3392,7 +3392,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        destination.writeString(this.password);[m
 [31m-        destination.writeString(this.firstName);[m
 [31m-        destination.writeString(this.lastName);[m
-[31m-        destination.writeInt(this.employeeId);[m
+[31m-        destination.writeInt(this.clientId);[m
 [31m-        destination.writeInt(this.active ? 1 : 0);[m
 [31m-        destination.writeString(this.role.getValue());[m
 [31m-        destination.writeString(this.managerId);[m
@@ -3405,63 +3405,63 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        return 0;[m
 [31m-    }[m
 [31m-[m
-[31m-    public static final Parcelable.Creator<EmployeeTransition> CREATOR = new Parcelable.Creator<EmployeeTransition>() {[m
-[31m-        public EmployeeTransition createFromParcel(Parcel employeeTransitionParcel) {[m
-[31m-            return new EmployeeTransition(employeeTransitionParcel);[m
+[31m-    public static final Parcelable.Creator<ClientTransition> CREATOR = new Parcelable.Creator<ClientTransition>() {[m
+[31m-        public ClientTransition createFromParcel(Parcel clientTransitionParcel) {[m
+[31m-            return new ClientTransition(clientTransitionParcel);[m
 [31m-        }[m
 [31m-[m
-[31m-        public EmployeeTransition[] newArray(int size) {[m
-[31m-            return new EmployeeTransition[size];[m
+[31m-        public ClientTransition[] newArray(int size) {[m
+[31m-            return new ClientTransition[size];[m
 [31m-        }[m
 [31m-    };[m
 [31m-[m
-[31m-    public EmployeeTransition() {[m
+[31m-    public ClientTransition() {[m
 [31m-        this.id = new UUID(0, 0);[m
 [31m-        this.password = "";[m
 [31m-        this.firstName = "";[m
 [31m-        this.lastName = "";[m
-[31m-        this.employeeId = -1;[m
+[31m-        this.clientId = -1;[m
 [31m-        this.active = false;[m
-[31m-        this.role = EmployeeRole.CASHIER;[m
+[31m-        this.role = ClientRole.CASHIER;[m
 [31m-        this.createdAt = new Date();[m
 [31m-        this.updatedAt = new Date();[m
 [31m-    }[m
 [31m-[m
-[31m-    public EmployeeTransition(Employee employee) {[m
-[31m-        this.id = employee.getId();[m
-[31m-        this.password = employee.getPassword();[m
-[31m-        this.firstName = employee.getFirstName();[m
-[31m-        this.lastName = employee.getLastName();[m
-[31m-        this.employeeId = employee.getEmployeeId();[m
-[31m-        this.active = employee.isActive();[m
-[31m-        this.role = employee.getRole();[m
-[31m-        this.createdAt = employee.getCreatedAt();[m
-[31m-        this.updatedAt = employee.getUpdatedAt();[m
+[31m-    public ClientTransition(Client client) {[m
+[31m-        this.id = client.getId();[m
+[31m-        this.password = client.getPassword();[m
+[31m-        this.firstName = client.getFirstName();[m
+[31m-        this.lastName = client.getLastName();[m
+[31m-        this.clientId = client.getClientId();[m
+[31m-        this.active = client.isActive();[m
+[31m-        this.role = client.getRole();[m
+[31m-        this.createdAt = client.getCreatedAt();[m
+[31m-        this.updatedAt = client.getUpdatedAt();[m
 [31m-    }[m
 [31m-[m
-[31m-    private EmployeeTransition(Parcel employeeTransitionParcel) {[m
-[31m-        this.id = (new ByteToUUIDConverterCommand()).setValueToConvert(employeeTransitionParcel.createByteArray()).execute();[m
-[31m-        this.password = employeeTransitionParcel.readString();[m
-[31m-        this.firstName = employeeTransitionParcel.readString();[m
-[31m-        this.lastName = employeeTransitionParcel.readString();[m
-[31m-        this.employeeId = employeeTransitionParcel.readInt();[m
-[31m-        this.active = employeeTransitionParcel.readInt() == 1 ? true : false;[m
-[31m-        this.role = EmployeeRole.fromString(employeeTransitionParcel.readString());[m
+[31m-    private ClientTransition(Parcel clientTransitionParcel) {[m
+[31m-        this.id = (new ByteToUUIDConverterCommand()).setValueToConvert(clientTransitionParcel.createByteArray()).execute();[m
+[31m-        this.password = clientTransitionParcel.readString();[m
+[31m-        this.firstName = clientTransitionParcel.readString();[m
+[31m-        this.lastName = clientTransitionParcel.readString();[m
+[31m-        this.clientId = clientTransitionParcel.readInt();[m
+[31m-        this.active = clientTransitionParcel.readInt() == 1 ? true : false;[m
+[31m-        this.role = ClientRole.fromString(clientTransitionParcel.readString());[m
 [31m-[m
 [31m-        this.createdAt = new Date();[m
-[31m-        this.createdAt.setTime(employeeTransitionParcel.readLong());[m
+[31m-        this.createdAt.setTime(clientTransitionParcel.readLong());[m
 [31m-[m
 [31m-        this.updatedAt = new Date();[m
-[31m-        this.updatedAt.setTime(employeeTransitionParcel.readLong());[m
+[31m-        this.updatedAt.setTime(clientTransitionParcel.readLong());[m
 [31m-    }[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/transition/ProductTransition.java b/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/transition/ProductTransition.java[m
+[1mdiff --git a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/transition/ProductTransition.java b/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/transition/ProductTransition.java[m
 [1mdeleted file mode 100644[m
 [1mindex 49ba451..0000000[m
-[1m--- a/frontend/app/src/main/java/edu/uark/uarkregisterapp/models/transition/ProductTransition.java[m
+[1m--- a/frontend/app/src/main/java/edu/uark/lawncareservicesapp/models/transition/ProductTransition.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,112 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp.models.transition;[m
+[31m-package edu.uark.lawncareservicesapp.models.transition;[m
 [31m-[m
 [31m-import android.os.Parcel;[m
 [31m-import android.os.Parcelable;[m
@@ -3471,9 +3471,9 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-import java.util.Date;[m
 [31m-import java.util.UUID;[m
 [31m-[m
-[31m-import edu.uark.uarkregisterapp.commands.converters.ByteToUUIDConverterCommand;[m
-[31m-import edu.uark.uarkregisterapp.commands.converters.UUIDToByteConverterCommand;[m
-[31m-import edu.uark.uarkregisterapp.models.api.Product;[m
+[31m-import edu.uark.lawncareservicesapp.commands.converters.ByteToUUIDConverterCommand;[m
+[31m-import edu.uark.lawncareservicesapp.commands.converters.UUIDToByteConverterCommand;[m
+[31m-import edu.uark.lawncareservicesapp.models.api.Product;[m
 [31m-[m
 [31m-public class ProductTransition implements Parcelable {[m
 [31m-	private UUID id;[m
@@ -3573,10 +3573,10 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-		this.updatedAt.setTime(productTransitionParcel.readLong());[m
 [31m-	}[m
 [31m-}[m
-[1mdiff --git a/frontend/app/src/main/res/layout/activity_create_employee_view.xml b/frontend/app/src/main/res/layout/activity_create_employee_view.xml[m
+[1mdiff --git a/frontend/app/src/main/res/layout/activity_create_client_view.xml b/frontend/app/src/main/res/layout/activity_create_client_view.xml[m
 [1mdeleted file mode 100644[m
 [1mindex 69516a8..0000000[m
-[1m--- a/frontend/app/src/main/res/layout/activity_create_employee_view.xml[m
+[1m--- a/frontend/app/src/main/res/layout/activity_create_client_view.xml[m
 [1m+++ /dev/null[m
 [36m@@ -1,27 +0,0 @@[m
 [31m-<?xml version="1.0" encoding="utf-8"?>[m
@@ -3587,7 +3587,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    android:layout_width="match_parent"[m
 [31m-    android:layout_height="match_parent"[m
 [31m-    android:fitsSystemWindows="true"[m
-[31m-    tools:context="edu.uark.uarkregisterapp.CreateEmployeeViewActivity">[m
+[31m-    tools:context="edu.uark.lawncareservicesapp.CreateClientViewActivity">[m
 [31m-[m
 [31m-    <android.support.design.widget.AppBarLayout[m
 [31m-        android:layout_width="match_parent"[m
@@ -3603,7 +3603,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-[m
 [31m-    </android.support.design.widget.AppBarLayout>[m
 [31m-[m
-[31m-    <include layout="@layout/content_create_employee_view" />[m
+[31m-    <include layout="@layout/content_create_client_view" />[m
 [31m-[m
 [31m-</android.support.design.widget.CoordinatorLayout>[m
 [1mdiff --git a/frontend/app/src/main/res/layout/activity_home_page.xml b/frontend/app/src/main/res/layout/activity_home_page.xml[m
@@ -3620,7 +3620,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    android:layout_width="match_parent"[m
 [31m-    android:layout_height="match_parent"[m
 [31m-    android:fitsSystemWindows="true"[m
-[31m-    tools:context="edu.uark.uarkregisterapp.HomePageActivity">[m
+[31m-    tools:context="edu.uark.lawncareservicesapp.HomePageActivity">[m
 [31m-[m
 [31m-    <android.support.design.widget.AppBarLayout[m
 [31m-        android:layout_width="match_parent"[m
@@ -3655,7 +3655,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    android:paddingLeft="@dimen/activity_horizontal_margin"[m
 [31m-    android:paddingRight="@dimen/activity_horizontal_margin"[m
 [31m-    android:paddingTop="@dimen/activity_vertical_margin"[m
-[31m-    tools:context="edu.uark.uarkregisterapp.LoginActivity">[m
+[31m-    tools:context="edu.uark.lawncareservicesapp.LoginActivity">[m
 [31m-[m
 [31m-    <!-- Login progress -->[m
 [31m-    <ProgressBar[m
@@ -3682,10 +3682,10 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-                android:layout_height="wrap_content">[m
 [31m-[m
 [31m-                <AutoCompleteTextView[m
-[31m-                    android:id="@+id/employeeId"[m
+[31m-                    android:id="@+id/clientId"[m
 [31m-                    android:layout_width="match_parent"[m
 [31m-                    android:layout_height="wrap_content"[m
-[31m-                    android:hint="@string/prompt_employee_id"[m
+[31m-                    android:hint="@string/prompt_client_id"[m
 [31m-                    android:inputType="textEmailAddress"[m
 [31m-                    android:maxLines="1"[m
 [31m-                    android:singleLine="true" />[m
@@ -3736,7 +3736,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    android:layout_width="match_parent"[m
 [31m-    android:layout_height="match_parent"[m
 [31m-    android:fitsSystemWindows="true"[m
-[31m-    tools:context="edu.uark.uarkregisterapp.TransactionAcitivty">[m
+[31m-    tools:context="edu.uark.lawncareservicesapp.TransactionAcitivty">[m
 [31m-[m
 [31m-    <android.support.design.widget.AppBarLayout[m
 [31m-        android:layout_width="match_parent"[m
@@ -3755,10 +3755,10 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    <include layout="@layout/content_transaction_acitivty" />[m
 [31m-[m
 [31m-</android.support.design.widget.CoordinatorLayout>[m
-[1mdiff --git a/frontend/app/src/main/res/layout/content_create_employee_view.xml b/frontend/app/src/main/res/layout/content_create_employee_view.xml[m
+[1mdiff --git a/frontend/app/src/main/res/layout/content_create_client_view.xml b/frontend/app/src/main/res/layout/content_create_client_view.xml[m
 [1mdeleted file mode 100644[m
 [1mindex eabeb9d..0000000[m
-[1m--- a/frontend/app/src/main/res/layout/content_create_employee_view.xml[m
+[1m--- a/frontend/app/src/main/res/layout/content_create_client_view.xml[m
 [1m+++ /dev/null[m
 [36m@@ -1,77 +0,0 @@[m
 [31m-<?xml version="1.0" encoding="utf-8"?>[m
@@ -3768,11 +3768,11 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    android:layout_width="match_parent"[m
 [31m-    android:layout_height="match_parent"[m
 [31m-    app:layout_behavior="@string/appbar_scrolling_view_behavior"[m
-[31m-    tools:context="edu.uark.uarkregisterapp.CreateEmployeeViewActivity"[m
-[31m-    tools:showIn="@layout/activity_create_employee_view">[m
+[31m-    tools:context="edu.uark.lawncareservicesapp.CreateClientViewActivity"[m
+[31m-    tools:showIn="@layout/activity_create_client_view">[m
 [31m-[m
 [31m-        <EditText[m
-[31m-            android:id="@+id/edit_text_employee_first_name"[m
+[31m-            android:id="@+id/edit_text_client_first_name"[m
 [31m-            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"[m
 [31m-            android:layout_width="301dp"[m
 [31m-            android:layout_height="45dp"[m
@@ -3789,12 +3789,12 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            app:layout_constraintTop_toTopOf="parent" />[m
 [31m-[m
 [31m-        <EditText[m
-[31m-            android:id="@+id/edit_text_employee_last_name"[m
+[31m-            android:id="@+id/edit_text_client_last_name"[m
 [31m-            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"[m
 [31m-            android:layout_width="291dp"[m
 [31m-            android:layout_height="49dp"[m
 [31m-            android:layout_alignParentStart="true"[m
-[31m-            android:layout_below="@+id/edit_text_employee_first_name"[m
+[31m-            android:layout_below="@+id/edit_text_client_first_name"[m
 [31m-            android:layout_marginEnd="8dp"[m
 [31m-            android:layout_marginStart="8dp"[m
 [31m-            android:layout_marginTop="30dp"[m
@@ -3804,15 +3804,15 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            app:layout_constraintEnd_toEndOf="parent"[m
 [31m-            app:layout_constraintHorizontal_bias="0.506"[m
 [31m-            app:layout_constraintStart_toStartOf="parent"[m
-[31m-            app:layout_constraintTop_toBottomOf="@+id/edit_text_employee_first_name" />[m
+[31m-            app:layout_constraintTop_toBottomOf="@+id/edit_text_client_first_name" />[m
 [31m-[m
 [31m-        <EditText[m
-[31m-            android:id="@+id/edit_text_employee_password"[m
+[31m-            android:id="@+id/edit_text_client_password"[m
 [31m-            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"[m
 [31m-            android:layout_width="292dp"[m
 [31m-            android:layout_height="44dp"[m
 [31m-            android:layout_alignParentStart="true"[m
-[31m-            android:layout_below="@+id/edit_text_employee_last_name"[m
+[31m-            android:layout_below="@+id/edit_text_client_last_name"[m
 [31m-            android:layout_marginEnd="8dp"[m
 [31m-            android:layout_marginStart="8dp"[m
 [31m-            android:layout_marginTop="30dp"[m
@@ -3822,14 +3822,14 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-            android:textAppearance="@android:style/TextAppearance.Medium.Inverse"[m
 [31m-            app:layout_constraintEnd_toEndOf="parent"[m
 [31m-            app:layout_constraintStart_toStartOf="parent"[m
-[31m-            app:layout_constraintTop_toBottomOf="@+id/edit_text_employee_last_name" />[m
+[31m-            app:layout_constraintTop_toBottomOf="@+id/edit_text_client_last_name" />[m
 [31m-[m
 [31m-        <Button[m
-[31m-            android:id="@+id/createEmployeeSaveButton"[m
+[31m-            android:id="@+id/createClientSaveButton"[m
 [31m-            android:layout_width="wrap_content"[m
 [31m-            android:layout_height="wrap_content"[m
 [31m-            android:layout_alignParentEnd="true"[m
-[31m-            android:layout_below="@+id/edit_text_employee_password"[m
+[31m-            android:layout_below="@+id/edit_text_client_password"[m
 [31m-            android:layout_marginBottom="16dp"[m
 [31m-            android:layout_marginEnd="24dp"[m
 [31m-            android:onClick="saveButtonOnClick"[m
@@ -3851,7 +3851,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    android:layout_width="match_parent"[m
 [31m-    android:layout_height="match_parent"[m
 [31m-    app:layout_behavior="@string/appbar_scrolling_view_behavior"[m
-[31m-    tools:context="edu.uark.uarkregisterapp.HomePageActivity"[m
+[31m-    tools:context="edu.uark.lawncareservicesapp.HomePageActivity"[m
 [31m-    tools:showIn="@layout/activity_home_page">[m
 [31m-[m
 [31m-    <Button[m
@@ -3879,14 +3879,14 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-        app:layout_constraintTop_toTopOf="parent" />[m
 [31m-[m
 [31m-    <Button[m
-[31m-        android:id="@+id/createEmployeeButton"[m
+[31m-        android:id="@+id/createClientButton"[m
 [31m-        android:layout_width="wrap_content"[m
 [31m-        android:layout_height="50dp"[m
 [31m-        android:layout_marginEnd="117dp"[m
 [31m-        android:layout_marginStart="117dp"[m
 [31m-        android:layout_marginTop="32dp"[m
-[31m-        android:onClick="createEmployeeClick"[m
-[31m-        android:text="@string/homepage_button_create_employee"[m
+[31m-        android:onClick="createClientClick"[m
+[31m-        android:text="@string/homepage_button_create_client"[m
 [31m-        app:layout_constraintEnd_toEndOf="parent"[m
 [31m-        app:layout_constraintStart_toStartOf="parent"[m
 [31m-        app:layout_constraintTop_toBottomOf="@+id/saleReportCashierButton" />[m
@@ -3941,7 +3941,7 @@ Binary files /dev/null and b/.idea/caches/gradle_models.ser differ
 [31m-    android:layout_width="match_parent"[m
 [31m-    android:layout_height="match_parent"[m
 [31m-    app:layout_behavior="@string/appbar_scrolling_view_behavior"[m
-[31m-    tools:context="edu.uark.uarkregisterapp.TransactionAcitivty"[m
+[31m-    tools:context="edu.uark.lawncareservicesapp.TransactionAcitivty"[m
 [31m-    tools:showIn="@layout/activity_transaction_acitivty">[m
 [31m-[m
 [31m-    <SearchView[m
@@ -4197,7 +4197,7 @@ Binary files a/frontend/app/src/main/res/mipmap-xxxhdpi/ic_save_black_24dp.png a
 [31m-    <string name="button_ok">OK</string>[m
 [31m-    <string name="homepage_button_logout">Logout</string>[m
 [31m-    <string name="homepage_button_start_transaction">Start Transaction</string>[m
-[31m-    <string name="homepage_button_create_employee">Create Employee</string>[m
+[31m-    <string name="homepage_button_create_client">Create Client</string>[m
 [31m-    <string name="homepage_button_report_product">Sales Report: Product</string>[m
 [31m-    <string name="homepage_button_report_cashier">Sales Report: Cashier</string>[m
 [31m-    <string name="homepage_alert_dialog_unimplemented_title">Functionality not available</string>[m
@@ -4234,11 +4234,11 @@ Binary files a/frontend/app/src/main/res/mipmap-xxxhdpi/ic_save_black_24dp.png a
 [31m-    <string name="title_activity_login">Welcome! Please log in.</string>[m
 [31m-[m
 [31m-    <!-- Strings related to login -->[m
-[31m-    <string name="prompt_employee_id">Employee ID</string>[m
+[31m-    <string name="prompt_client_id">Client ID</string>[m
 [31m-    <string name="prompt_password">Password</string>[m
 [31m-    <string name="action_sign_in">Log in</string>[m
 [31m-    <string name="action_sign_in_short">Log in</string>[m
-[31m-    <string name="error_invalid_employee_id">This Employee ID is invalid</string>[m
+[31m-    <string name="error_invalid_client_id">This Client ID is invalid</string>[m
 [31m-    <string name="error_invalid_password">This password is too short</string>[m
 [31m-    <string name="error_incorrect_password">This password is incorrect</string>[m
 [31m-    <string name="error_field_required">This field is required</string>[m
@@ -4247,12 +4247,12 @@ Binary files a/frontend/app/src/main/res/mipmap-xxxhdpi/ic_save_black_24dp.png a
 [31m-    </string>[m
 [31m-    <string name="login_error">Login Failed</string>[m
 [31m-    <string name="login_loading">Loading...</string>[m
-[31m-    <string name="employee_check">Checking for employees...</string>[m
-[31m-    <string name="employee_check_error">Failed to get employee count</string>[m
-[31m-    <string name="alert_dialog_employee_loading">Creating new employee...</string>[m
-[31m-    <string name="alert_dialog_employee_load_success">Create employee!</string>[m
-[31m-    <string name="alert_dialog_employee_load_failure">Failed to load employees.</string>[m
-[31m-    <string name="title_activity_create_employee_view">Create Employee</string>[m
+[31m-    <string name="client_check">Checking for clients...</string>[m
+[31m-    <string name="client_check_error">Failed to get client count</string>[m
+[31m-    <string name="alert_dialog_client_loading">Creating new client...</string>[m
+[31m-    <string name="alert_dialog_client_load_success">Create client!</string>[m
+[31m-    <string name="alert_dialog_client_load_failure">Failed to load clients.</string>[m
+[31m-    <string name="title_activity_create_client_view">Create Client</string>[m
 [31m-[m
 [31m-    <!-- String related to transactions -->[m
 [31m-    <string name="transaction_error">Uh oh, we failed to create new transaction</string>[m
@@ -4296,13 +4296,13 @@ Binary files a/frontend/app/src/main/res/mipmap-xxxhdpi/ic_save_black_24dp.png a
 [31m-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />[m
 [31m-[m
 [31m-</resources>[m
-[1mdiff --git a/frontend/app/src/test/java/edu/uark/uarkregisterapp/ExampleUnitTest.java b/frontend/app/src/test/java/edu/uark/uarkregisterapp/ExampleUnitTest.java[m
+[1mdiff --git a/frontend/app/src/test/java/edu/uark/lawncareservicesapp/ExampleUnitTest.java b/frontend/app/src/test/java/edu/uark/lawncareservicesapp/ExampleUnitTest.java[m
 [1mdeleted file mode 100644[m
 [1mindex 30467d1..0000000[m
-[1m--- a/frontend/app/src/test/java/edu/uark/uarkregisterapp/ExampleUnitTest.java[m
+[1m--- a/frontend/app/src/test/java/edu/uark/lawncareservicesapp/ExampleUnitTest.java[m
 [1m+++ /dev/null[m
 [36m@@ -1,17 +0,0 @@[m
-[31m-package edu.uark.uarkregisterapp;[m
+[31m-package edu.uark.lawncareservicesapp;[m
 [31m-[m
 [31m-import org.junit.Test;[m
 [31m-[m
