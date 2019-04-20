@@ -117,7 +117,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 //UN-COMMENT LINE BELOW FOR ACTUAL USE OF APPLICATION
-        // (new ClientCheckTask()).execute();
+         (new ClientCheckTask()).execute();
 
     }
     @Override

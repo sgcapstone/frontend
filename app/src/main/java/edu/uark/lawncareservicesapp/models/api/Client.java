@@ -52,6 +52,47 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         return this;
     }
 
+    private String phoneNumber;
+    public String getPhoneNumber(){return phoneNumber;}
+    public Client setPhoneNumber(String phoneNumber){
+        this.phoneNumber = phoneNumber;
+        return this;
+    }
+
+    private String emailAddress;
+    public String getEmailAddress(){return emailAddress;}
+    public Client setEmailAddress(String emailAddress){
+        this.emailAddress = emailAddress;
+        return this;
+    }
+
+    private String address;
+    public String getAddress() {return address;}
+    public Client setAddress(String address){
+        this.address = address;
+        return this;
+    }
+    private String city;
+    public String getCity() {return city;}
+    public Client setCity(String city){
+        this.city = city;
+        return this;
+    }
+
+    private String state;
+    public String getState() {return state;}
+    public Client setState(String state){
+        this.state = state;
+        return this;
+    }
+
+    private int zip;
+    public int getZip(){return zip;}
+    public Client setZip(int zip){
+        this.zip = zip;
+        return this;
+    }
+
     private int clientId;
     public int getClientId() {
         return clientId;
@@ -79,12 +120,12 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         return this;
     }
 
-    private String managerId;
+    private String customerId;
     public String getManagerId() {
-        return managerId;
+        return customerId;
     }
-    public Client setManagerId(String managerId) {
-        this.managerId = managerId;
+    public Client setManagerId(String customerId) {
+        this.customerId = customerId;
         return this;
     }
 
@@ -130,13 +171,13 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         this.lastName = rawJsonObject.optString(ClientFieldName.LAST_NAME.getFieldName());
         this.clientId = rawJsonObject.optInt(ClientFieldName.CLIENT_ID.getFieldName());
         this.active = rawJsonObject.optBoolean(ClientFieldName.ACTIVE.getFieldName());
-
+/*
         this.role = ClientRole.fromString(rawJsonObject.optString(ClientFieldName.ROLE.getFieldName()));
         if (this.role == null) {
             throw new Error("Invalid client role.");
         }
-
-        this.managerId = rawJsonObject.optString(ClientFieldName.MANGER_ID.getFieldName());
+*/
+        this.customerId = rawJsonObject.optString(ClientFieldName.CUSTOMER_ID.getFieldName());
 
         value = rawJsonObject.optString(ClientFieldName.CREATED_AT.getFieldName());
         if (!StringUtils.isBlank(value)) {
@@ -165,13 +206,13 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
 
         try {
             jsonObject.put(ClientFieldName.ID.getFieldName(), this.id.toString());
-            jsonObject.put(ClientFieldName.PASSWORD.getFieldName(), this.password.toString());
             jsonObject.put(ClientFieldName.FIRST_NAME.getFieldName(), this.firstName);
             jsonObject.put(ClientFieldName.LAST_NAME.getFieldName(), this.lastName);
-            jsonObject.put(ClientFieldName.CLIENT_ID.getFieldName(), this.clientId);
-            jsonObject.put(ClientFieldName.ACTIVE.getFieldName(), this.active);
-            jsonObject.put(ClientFieldName.ROLE.getFieldName(), this.role.getValue());
-            jsonObject.put(ClientFieldName.MANGER_ID.getFieldName(), this.managerId);
+            jsonObject.put(ClientFieldName.ADDRESS.getFieldName(), this.address);
+            //jsonObject.put(ClientFieldName.ACTIVE.getFieldName(), this.active);
+            //jsonObject.put(ClientFieldName.ROLE.getFieldName(), this.role.getValue());
+            jsonObject.put(ClientFieldName.PASSWORD.getFieldName(), this.password.toString());
+            jsonObject.put(ClientFieldName.CUSTOMER_ID.getFieldName(), this.customerId);
             jsonObject.put(ClientFieldName.CREATED_AT.getFieldName(), (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US)).format(this.createdAt));
             jsonObject.put(ClientFieldName.UPDATED_AT.getFieldName(), (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US)).format(this.createdAt));
         } catch (JSONException e) {
@@ -186,6 +227,7 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         this.password = "";
         this.firstName = "";
         this.lastName = "";
+        this.address = "";
         this.clientId = -1;
         this.active = false;
         this.role = ClientRole.CONSUMER;
@@ -198,6 +240,7 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         this.password = clientTransition.getPassword();
         this.firstName = clientTransition.getFirstName();
         this.lastName = clientTransition.getLastName();
+        this.address = clientTransition.getAddress();
         this.clientId = clientTransition.getClientId();
         this.active = clientTransition.isActive();
         this.role = clientTransition.getRole();

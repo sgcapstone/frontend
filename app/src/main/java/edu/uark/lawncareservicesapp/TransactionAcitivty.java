@@ -18,7 +18,6 @@ import java.util.List;
 import edu.uark.lawncareservicesapp.adapters.ProductCountListAdapter;
 import edu.uark.lawncareservicesapp.models.api.services.ProductService;
 import edu.uark.lawncareservicesapp.models.api.services.TransactionService;
-import edu.uark.lawncareservicesapp.R;
 import edu.uark.lawncareservicesapp.models.api.ApiResponse;
 import edu.uark.lawncareservicesapp.models.api.Client;
 import edu.uark.lawncareservicesapp.models.api.Product;
@@ -47,7 +46,7 @@ public class TransactionAcitivty extends AppCompatActivity {
         this.productCountListAdapter = new ProductCountListAdapter(this, this.productCountList);
         this.getProductsListView().setAdapter(this.productCountListAdapter);
 
-        searchField = findViewById(R.id.transaction_search_field);
+        searchField = findViewById(R.id.service_search_field);
         searchField.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
@@ -64,7 +63,7 @@ public class TransactionAcitivty extends AppCompatActivity {
     }
 
     private ListView getProductsListView() {
-        return (ListView) this.findViewById(R.id.list_view_products);
+        return (ListView) this.findViewById(R.id.list_view_providers);
     }
 
     public void createTransaction(View view) {

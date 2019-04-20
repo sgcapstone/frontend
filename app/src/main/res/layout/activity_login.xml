@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="@drawable/trimmr"
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -13,42 +13,6 @@
 
     <!-- Login progress -->
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="134dp">
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RadioButton
-                android:id="@+id/provider_role_switch"
-                android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:background="@color/colorProviderButton"
-                android:baselineAligned="false"
-                android:clickable="true"
-                android:cursorVisible="false"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:text="@string/provider_role_switch"
-                android:visibility="visible"
-                tools:focusable="auto" />
-
-            <RadioButton
-                android:id="@+id/consumer_role_switch"
-                android:layout_width="match_parent"
-                android:layout_height="67dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
-                android:background="@color/colorConsumerButton"
-                android:baselineAligned="false"
-                android:clickable="true"
-                android:focusable="true"
-                android:text="@string/consumer_role_switch"
-                android:visibility="visible" /></RadioGroup>
-
-    </RelativeLayout>
-
     <ProgressBar
         android:id="@+id/login_progress"
         style="?android:attr/progressBarStyleLarge"
@@ -58,10 +22,57 @@
         android:visibility="gone" />
 
 
+    <RelativeLayout
+        android:layout_width="384dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="200dp">
+
+        <RadioGroup
+            android:layout_width="370dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/consumer_role_switch"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+
+                android:layout_marginEnd="50dp"
+                android:baselineAligned="true"
+                android:clickable="true"
+                android:focusable="auto"
+                android:text="@string/consumer_role_switch"
+                android:visibility="visible"
+                tools:focusable="auto" />
+
+            <RadioButton
+                android:id="@+id/provider_role_switch"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:baselineAligned="true"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="@string/provider_role_switch"
+                android:visibility="visible"
+                tools:focusable="auto" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="255dp">
+        android:layout_height="228dp"
+        android:layout_marginTop="30dp">
+
 
         <LinearLayout
             android:id="@+id/email_login_form"

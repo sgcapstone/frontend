@@ -69,7 +69,7 @@
 
     <!-- String related to transactions -->
     <string name="title_activity_transaction_acitivty">Create Transaction</string>
-    <string name="button_activity_transaction_review">Review Order</string>
+    <string name="select_provider_button">Select Provider</string>
     <string name="product_list_item_lookupCode">Lookup Code:</string>
     <string name="product_list_item_price">Price:</string>
     <string name="product_list_item_increment">+</string>
@@ -85,11 +85,17 @@
     <string name="transaction_confirm">Checkout</string>
     <string name="transaction_done">Done</string>
     <string name="title_activity_profile_page">ProfilePage</string>
-
+    <string name="search_Name_Radio">Name</string>
+    <string name="search_City_Radio">City</string>
+    <string name="search_Services_Radio">Services</string>
     <!-- Strings related to Settings -->
     <string name="profile_overhead_text">PROFILE PAGE</string>
     <string name="profile_first_name_business_name">First Name/Business Name</string>
     <string name="profile_last_name_owner_name">Last Name/Owner Name</string>
     <string name="profile_phone_number">Phone Number</string>
     <string name="profile_email_address">Email Address</string>
+    <string name="profile_street_address">Street Address</string>
+    <string name="profile_city">City</string>
+    <string name="profile_state">State</string>
+    <string name="profile_zip">Zip</string>
 </resources>

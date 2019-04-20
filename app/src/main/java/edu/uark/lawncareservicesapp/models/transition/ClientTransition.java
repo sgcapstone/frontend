@@ -47,10 +47,51 @@ public class ClientTransition implements Parcelable {
         return this;
     }
 
-    private int clientId;
-    public int getClientId() {
-        return clientId;
+
+    private String phoneNumber;
+    public String getPhoneNumber(){return phoneNumber;}
+    public ClientTransition setPhoneNumber(String phoneNumber){
+        this.phoneNumber = phoneNumber;
+        return this;
     }
+
+    private String emailAddress;
+    public String getEmailAddress(){return emailAddress;}
+    public ClientTransition setEmailAddress(String emailAddress){
+        this.emailAddress = emailAddress;
+        return this;
+    }
+
+    private String address;
+    public String getAddress(){return address;}
+    public ClientTransition setAddress(String address){
+        this.address = address;
+        return this;
+    }
+
+    private String city;
+    public String getCity() {return city;}
+    public ClientTransition setCity(String city){
+        this.city = city;
+        return this;
+    }
+
+    private String state;
+    public String getState() {return state;}
+    public ClientTransition setState(String state){
+        this.state = state;
+        return this;
+    }
+
+    private int zip;
+    public int getZip(){return zip;}
+    public ClientTransition setZip(int zip){
+        this.zip = zip;
+        return this;
+    }
+
+    private int clientId;
+    public int getClientId() {return clientId;}
     public ClientTransition setClientId(int clientId) {
         this.clientId = clientId;
         return this;

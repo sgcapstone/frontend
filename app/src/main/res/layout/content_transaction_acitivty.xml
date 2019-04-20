@@ -8,41 +8,86 @@
     tools:context="edu.uark.lawncareservicesapp.TransactionAcitivty"
     tools:showIn="@layout/activity_transaction_acitivty">
 
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="409dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/service_search_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/searchName"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/search_Name_Radio" />
+
+
+        <RadioButton
+            android:id="@+id/searchCity"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/search_City_Radio" />
+
+        <RadioButton
+            android:id="@+id/searchServices"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/search_Services_Radio" />
+
+    </RadioGroup>
+
     <SearchView
-        android:id="@+id/transaction_search_field"
+        android:id="@+id/service_search_field"
         android:layout_width="328dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </SearchView>
 
     <Button
-        android:id="@+id/transaction_checkout_button"
+        android:id="@+id/select_provider_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:onClick="createTransaction"
-        android:text="@string/button_activity_transaction_review"
+        android:text="@string/select_provider_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ListView
-        android:id="@+id/list_view_products"
+        android:id="@+id/list_view_providers"
         android:layout_width="341dp"
         android:layout_height="377dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/transaction_checkout_button"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/select_provider_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transaction_search_field"
+        app:layout_constraintTop_toBottomOf="@+id/service_search_field"
         app:layout_constraintVertical_bias="0.638" />
 
 </android.support.constraint.ConstraintLayout>
