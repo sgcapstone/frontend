@@ -1,7 +1,13 @@
 package edu.uark.lawncareservicesapp.models.api.services;
 
+import android.util.Log;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import edu.uark.lawncareservicesapp.models.api.ApiResponse;
@@ -18,6 +24,7 @@ public class ClientService extends BaseRemoteService {
     }
 
     public ApiResponse<Client> login(String clientId, String password){
+        System.out.println(this.buildPath("login"));
         return this.readClientDetailsFromResponse(
                 this.<Client>performPostRequest(
                         this.buildPath("login"),
@@ -27,6 +34,7 @@ public class ClientService extends BaseRemoteService {
     }
 
     public ApiResponse<Integer> check(){
+        System.out.println(this.buildPath("count"));
         return this.readIntegerFromResponse(
                 this.<Integer>performGetRequest(
                         this.buildPath("count")
@@ -42,6 +50,7 @@ public class ClientService extends BaseRemoteService {
                 )
         );
     }
+
 
     private ApiResponse<Client> readClientDetailsFromResponse(ApiResponse<Client> apiResponse) {
         JSONObject rawJsonObject = this.rawResponseToJSONObject(
@@ -69,6 +78,7 @@ public class ClientService extends BaseRemoteService {
 
 
     
-
+    // Changed
     public ClientService() { super(ApiObject.CLIENT); }
+    //public ClientService() { super (ApiObject.CONSUMER); }
 }

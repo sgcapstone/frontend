@@ -6,6 +6,8 @@ public enum ApiObject implements PathElementInterface {
     NONE(""),
     PRODUCT("product/"),
     CLIENT("client/"),
+    PROVIDER("provider/"),
+    CONSUMER("consumer/"),
     TRANSACTION("transaction/");
 
     @Override
