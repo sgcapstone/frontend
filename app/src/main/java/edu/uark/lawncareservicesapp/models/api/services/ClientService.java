@@ -79,6 +79,6 @@ public class ClientService extends BaseRemoteService {
 
     
     // Changed
-    public ClientService() { super(ApiObject.CLIENT); }
-    //public ClientService() { super (ApiObject.CONSUMER); }
+    //public ClientService() { super(ApiObject.CLIENT); }
+    public ClientService() { super (ApiObject.CONSUMER); }
 }
