@@ -1,8 +1,10 @@
 package edu.uark.lawncareservicesapp;
 
+import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -114,7 +116,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         int index = getIntent().getIntExtra("index", 0);
         this.provider = ApplicationState.getProviderList().get(index);
         Log.d("Provider add", provider.getProviderName());
-       String address = provider.getAddress() + "+" + provider.getCity() + "+" + provider.getState() + "+" + provider.getZip();
+        String address = provider.getAddress() + "+" + provider.getCity() + "+" + provider.getState() + "+" + provider.getZip();
 
         String address2 = address.replaceAll("\\s", "");
         new GetLocationLatLong().execute(address2);
@@ -122,8 +124,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         mMap = googleMap;
 
-        LatLng sydney = new LatLng(this.lat, this.longi);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        try {
+            LatLng location = new LatLng(this.lat, this.longi);
+            mMap.addMarker(new MarkerOptions().position(location).title(provider.getProviderName()));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(location));
+        }
+        catch (Exception e) {
+            new AlertDialog.Builder(this).
+                    setTitle(R.string.failed_to_load_map).
+                    setMessage(R.string.failed_to_load_map).
+                    setPositiveButton(
+                            R.string.button_ok,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.dismiss();
+                                }
+                            }
+                    ).
+                    create().
+                    show();
+        }
     }
 }
