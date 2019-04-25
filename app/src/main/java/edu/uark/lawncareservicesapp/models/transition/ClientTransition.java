@@ -111,7 +111,7 @@ public class ClientTransition implements Parcelable {
         return role;
     }
     public ClientTransition setRole(ClientRole role) {
-        this.role = ClientRole.fromString(LoginActivity.ReturnRole());
+        this.role = role;
         return this;
     }
 
@@ -178,7 +178,7 @@ public class ClientTransition implements Parcelable {
         this.lastName = "";
         this.clientId = -1;
         this.active = false;
-        this.role = ClientRole.fromString(LoginActivity.ReturnRole());
+        this.role = ClientRole.CONSUMER;
         this.createdAt = new Date();
         this.updatedAt = new Date();
     }
@@ -202,7 +202,6 @@ public class ClientTransition implements Parcelable {
         this.lastName = clientTransitionParcel.readString();
         this.clientId = clientTransitionParcel.readInt();
         this.active = clientTransitionParcel.readInt() == 1 ? true : false;
-        this.role = ClientRole.fromString(LoginActivity.ReturnRole());
 
         this.createdAt = new Date();
         this.createdAt.setTime(clientTransitionParcel.readLong());

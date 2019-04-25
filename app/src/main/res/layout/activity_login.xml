@@ -28,6 +28,7 @@
         android:layout_marginTop="200dp">
 
         <RadioGroup
+            android:id="@+id/role_group"
             android:layout_width="370dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
