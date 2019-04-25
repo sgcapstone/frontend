@@ -4,7 +4,7 @@
     <string name="homepage_button_logout">Logout</string>
     <string name="homepage_button_search">Search for Services</string>
     <string name="homepage_button_list_of_services">List of Services</string>
-    <string name="homepage_button_create_client">Create Client</string>
+    <string name="homepage_button_profile_page">Profile</string>
     <string name="homepage_button_report_product">Sales Report: Product</string>
     <string name="homepage_button_report_cashier">Sales Report: Cashier</string>
     <string name="homepage_alert_dialog_unimplemented_title">Functionality not available</string>
@@ -98,4 +98,24 @@
     <string name="profile_city">City</string>
     <string name="profile_state">State</string>
     <string name="profile_zip">Zip</string>
+
+
+    <!-- Strings related to Search Page -->
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search_button">Find Services</string>
+    <string name="edit_text_provider_name">Name</string>
+    <string name="edit_text_city_name">City</string>
+    <string name="edit_text_services">Service</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_view_providers">ViewProvidersActivity</string>
+    <string name="provider_check_error">No providers found</string>
+    <string name="performing_search">Performing search...</string>
+    <string name="provider_check">Checking for providers</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="text_view_title">Search By:</string>
+    <string name="text_view_or">Or</string>
+    <string name="app_bar_title"></string>
+    <string name="google_api_key">AIzaSyBuGVsbcnf6N8ceEuMec-RGGyi5AFpz_LY</string>
+    <string name="failed_to_load_map">Location not found</string>
+    <string name="text_view_search_results_title">Available Providers:</string>
 </resources>

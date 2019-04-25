@@ -5,7 +5,8 @@ import edu.uark.lawncareservicesapp.models.api.interfaces.PathElementInterface;
 public enum ApiObject implements PathElementInterface {
     NONE(""),
     PRODUCT("product/"),
-    CLIENT("client/"),
+    CLIENT("consumer/"),
+    PROVIDER("provider/"),
     TRANSACTION("transaction/");
 
     @Override

@@ -1,5 +1,8 @@
 package edu.uark.lawncareservicesapp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import edu.uark.lawncareservicesapp.models.api.Client;
 import edu.uark.lawncareservicesapp.models.api.Transaction;
 
@@ -10,6 +13,16 @@ class ApplicationState {
     static void setClient(Client e) {
         client = e;
     }
+
+    static ArrayList<Client> getProviderList() { return providerList; }
+
+    static void setProviderList(List<Client> e) {
+        providerList = new ArrayList<Client>();
+        providerList.addAll(e);
+        System.out.println(providerList);
+
+    }
+
 
     static boolean isAuthenticated() {
         return isAuthenticated;
@@ -26,6 +39,7 @@ class ApplicationState {
     }
 
     private static Client client;
+    private static ArrayList<Client> providerList;
     private static boolean isAuthenticated;
     private static Transaction transaction;
 }
