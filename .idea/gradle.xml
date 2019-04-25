@@ -6,8 +6,9 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT" />
         </compositeConfiguration>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
         <option name="gradleHome" value="C:/Gradle/gradle-4.10.2" />
         <option name="modules">
           <set>
@@ -15,8 +16,9 @@
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
+=======
+>>>>>>> master
         <option name="resolveModulePerSourceSet" value="false" />
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

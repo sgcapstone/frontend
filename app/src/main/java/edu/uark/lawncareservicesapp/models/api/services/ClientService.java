@@ -2,6 +2,11 @@ package edu.uark.lawncareservicesapp.models.api.services;
 
 import android.util.Log;
 
+<<<<<<< HEAD
+=======
+import org.json.JSONArray;
+import org.json.JSONException;
+>>>>>>> master
 import org.json.JSONObject;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,6 +31,7 @@ public class ClientService extends BaseRemoteService {
         );
     }
 
+<<<<<<< HEAD
     public ApiResponse<Client> provider_login(String clientId, String password) {
         return this.readClientDetailsFromResponse(
                 this.<Client>performPostRequest(
@@ -36,6 +42,10 @@ public class ClientService extends BaseRemoteService {
     }
 
     public ApiResponse<Client> consumer_login(String clientId, String password) {
+=======
+    public ApiResponse<Client> login(String clientId, String password){
+        System.out.println(this.buildPath("login"));
+>>>>>>> master
         return this.readClientDetailsFromResponse(
                 this.<Client>performPostRequest(
                         this.buildPath("login"),
@@ -44,7 +54,12 @@ public class ClientService extends BaseRemoteService {
         );
     }
 
+<<<<<<< HEAD
     public ApiResponse<Integer> check() {
+=======
+    public ApiResponse<Integer> check(){
+        System.out.println(this.buildPath("count"));
+>>>>>>> master
         return this.readIntegerFromResponse(
                 this.<Integer>performGetRequest(
                         this.buildPath("count")
@@ -62,6 +77,7 @@ public class ClientService extends BaseRemoteService {
     }
 
 
+<<<<<<< HEAD
     public ApiResponse<List<Client>> findProvidersByServices(String services) {
         ApiResponse<List<Client>> apiResponse = this.<List<Client>>performGetRequest(
                 this.buildPath("service/" + services)
@@ -134,6 +150,8 @@ public class ClientService extends BaseRemoteService {
     }
 
 
+=======
+>>>>>>> master
     private ApiResponse<Client> readClientDetailsFromResponse(ApiResponse<Client> apiResponse) {
         JSONObject rawJsonObject = this.rawResponseToJSONObject(
                 apiResponse.getRawResponse()
@@ -159,6 +177,7 @@ public class ClientService extends BaseRemoteService {
     }
 
 
+<<<<<<< HEAD
     public ClientService() {
         super(ApiObject.CLIENT);
     }
@@ -166,4 +185,10 @@ public class ClientService extends BaseRemoteService {
     public ClientService(ClientRole role) {
         super(ApiObject.PROVIDER);
     }
+=======
+    
+    // Changed
+    //public ClientService() { super(ApiObject.CLIENT); }
+    public ClientService() { super (ApiObject.CONSUMER); }
+>>>>>>> master
 }

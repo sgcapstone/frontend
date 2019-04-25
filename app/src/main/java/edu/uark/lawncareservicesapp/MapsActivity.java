@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -15,6 +18,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+<<<<<<< HEAD
 
 
 import org.json.JSONArray;
@@ -48,6 +52,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private double longi;
     private boolean searchCompleteFlag;
 
+=======
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import edu.uark.lawncareservicesapp.models.api.Provider;
+
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+
+    private GoogleMap mMap;
+    private Provider provider;
+    private double lat;
+    private double longi;
+>>>>>>> master
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +83,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     private class GetLocationLatLong extends AsyncTask<String, Integer, String> {
 
         protected String doInBackground(String... urls) {
@@ -95,12 +121,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
         protected void onPostExecute(String results) {
+<<<<<<< HEAD
             searchCompleteFlag = true;
             startMap(mMap);
+=======
+            Log.d("LATLONG", results);
+>>>>>>> master
         }
 
     }
 
+<<<<<<< HEAD
 
 
 
@@ -187,6 +218,56 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.addMarker(new MarkerOptions().position(location).title(client.getProviderName()));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 14));
         } catch (Exception e) {
+=======
+    public  boolean setLatLong(JSONObject jsonObject) {
+
+        try {
+
+            this.longi = ((JSONArray)jsonObject.get("results")).getJSONObject(0)
+                    .getJSONObject("geometry").getJSONObject("location")
+                    .getDouble("lng");
+
+            this.lat = ((JSONArray)jsonObject.get("results")).getJSONObject(0)
+                    .getJSONObject("geometry").getJSONObject("location")
+                    .getDouble("lat");
+
+        } catch (JSONException e) {
+            return false;
+
+        }
+
+        return true;
+    }
+
+    /**
+     * Manipulates the map once available.
+     * This callback is triggered when the map is ready to be used.
+     * This is where we can add markers or lines, add listeners or move the camera. In this case,
+     * we just add a marker near Sydney, Australia.
+     * If Google Play services is not installed on the device, the user will be prompted to install
+     * it inside the SupportMapFragment. This method will only be triggered once the user has
+     * installed Google Play services and returned to the app.
+     */
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        int index = getIntent().getIntExtra("index", 0);
+        this.provider = ApplicationState.getProviderList().get(index);
+        Log.d("Provider add", provider.getProviderName());
+        String address = provider.getAddress() + "+" + provider.getCity() + "+" + provider.getState() + "+" + provider.getZip();
+
+        String address2 = address.replaceAll("\\s", "");
+        new GetLocationLatLong().execute(address2);
+
+
+        mMap = googleMap;
+
+        try {
+            LatLng location = new LatLng(this.lat, this.longi);
+            mMap.addMarker(new MarkerOptions().position(location).title(provider.getProviderName()));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(location));
+        }
+        catch (Exception e) {
+>>>>>>> master
             new AlertDialog.Builder(this).
                     setTitle(R.string.failed_to_load_map).
                     setMessage(R.string.failed_to_load_map).
@@ -202,4 +283,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     show();
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master

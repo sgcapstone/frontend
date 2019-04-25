@@ -300,6 +300,10 @@ public abstract class BaseRemoteService {
 	//private static final String BASE_URL = "http://finalcapstonedb.ccmat5myxbks.us-east-2.rds.amazonaws.com/";
 
 	// IF YOU ON STOCK ANDORID EMULATOR
+<<<<<<< HEAD
 	 private static String BASE_URL = "http://10.0.2.2:4000/api/";
+=======
+	private static final String BASE_URL = "http://192.168.0.5:4000/api/";
+>>>>>>> master
 
 }
