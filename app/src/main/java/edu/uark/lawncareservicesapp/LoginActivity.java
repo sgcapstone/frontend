@@ -18,18 +18,14 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+
 import java.util.regex.Pattern;
 
-import edu.uark.lawncareservicesapp.models.api.enums.ApiObject;
-import edu.uark.lawncareservicesapp.models.api.enums.ClientRole;
-import edu.uark.lawncareservicesapp.models.api.services.*;
 import edu.uark.lawncareservicesapp.models.api.ApiResponse;
 import edu.uark.lawncareservicesapp.models.api.Client;
 import edu.uark.lawncareservicesapp.models.api.services.ClientService;
 
-public class LoginActivity extends AppCompatActivity{
+public class LoginActivity extends AppCompatActivity {
 
     private static final int REQUEST_READ_CONTACTS = 0;
     private static final String[] DUMMY_CREDENTIALS = new String[]{
@@ -41,18 +37,63 @@ public class LoginActivity extends AppCompatActivity{
     private EditText mClientId;
     private EditText mPasswordView;
     private LoginActivity that = this;
-    private RadioGroup radioRoleGroup;
-    private RadioButton consumerButton;
-    private RadioButton providerButton;
-    private boolean providerflag = false;
-    private boolean consumerflag = true;
+    private static boolean ProviderFlag = false;
+    private static boolean ConsumerFlag = true;
+    static String roletype = null;
+
+    public static String ReturnRole(){
+        if(ProviderFlag) {
+            roletype = "provider";
+        }
+        else if(ConsumerFlag) {
+            roletype = "consumer";
+        }
+        return roletype;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         setupActionBar();
-        radioGroupListener();
+        Button ProviderFlagButton = findViewById(R.id.provider_role_switch);
+        ProviderFlagButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new AlertDialog.Builder(that).
+                        setMessage(R.string.provider_box_click).
+                        setPositiveButton(
+                                R.string.button_dismiss,
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.dismiss();
+                                    }
+                                }
+                        ).
+                        create().show();
+                ProviderFlag = true;
+                ConsumerFlag = false;
+            }
+        });
+        Button ConsumerFlagButton = findViewById(R.id.consumer_role_switch);
+        ConsumerFlagButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new AlertDialog.Builder(that).
+                        setMessage(R.string.consumer_box_click).
+                        setPositiveButton(
+                                R.string.button_dismiss,
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.dismiss();
+                                    }
+                                }
+                        ).
+                        create().show();
+                ConsumerFlag = true;
+                ProviderFlag = false;
+            }
+        });
         mClientId = findViewById(R.id.clientId);
 
         mPasswordView = (EditText) findViewById(R.id.password);
@@ -76,58 +117,9 @@ public class LoginActivity extends AppCompatActivity{
             }
         });
 //UN-COMMENT LINE BELOW FOR ACTUAL USE OF APPLICATION
-        // (new ClientCheckTask()).execute();
+         (new ClientCheckTask()).execute();
 
     }
-    public void radioGroupListener(){
-        radioRoleGroup = (RadioGroup) findViewById(R.id.role_group);
-        consumerButton = (RadioButton) findViewById(R.id.consumer_role_switch);
-        providerButton = (RadioButton) findViewById(R.id.provider_role_switch);
-        providerButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getBaseContext();
-                consumerButton.setChecked(false);
-                providerButton.setChecked(true);
-                if (providerButton.isChecked()){
-                    new AlertDialog.Builder(that).
-                            setMessage(R.string.provider_box_click).
-                            setPositiveButton(
-                                    R.string.button_dismiss,
-                                    new DialogInterface.OnClickListener() {
-                                        public void onClick(DialogInterface dialog, int id) {
-                                            dialog.dismiss();
-                                        }
-                                    }
-                            ).
-                            create().show();
-                providerRoleSelection();
-            }
-        }
-        });
-        consumerButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                providerButton.setChecked(false);
-                consumerButton.setChecked(true);
-                if(consumerButton.isChecked()){
-                new AlertDialog.Builder(that).
-                        setMessage(R.string.consumer_box_click).
-                        setPositiveButton(
-                                R.string.button_dismiss,
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        dialog.dismiss();
-                                    }
-                                }
-                        ).
-                        create().show();
-                    consumerRoleSelection();
-            }
-            }
-        });
-    }
-
     @Override
     public void onBackPressed() {
     }
@@ -139,15 +131,6 @@ public class LoginActivity extends AppCompatActivity{
             // Show the Up button in the action bar.
             getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         }
-    }
-
-    public void providerRoleSelection(){
-        consumerflag = false;
-        providerflag = true;
-    }
-    public void consumerRoleSelection(){
-        providerflag = false;
-        consumerflag = true;
     }
 
     private void attemptLogin() {
@@ -261,27 +244,12 @@ public class LoginActivity extends AppCompatActivity{
         protected ApiResponse<Client> doInBackground(String... params) {
             String clientId = params[0];
             String password = params[1];
-            ApiResponse<Client> apiResponse = new ApiResponse<>();
-            if(providerflag) {
-                apiResponse = (new ClientService(ClientRole.PROVIDER).provider_login(clientId, password));
-                if (apiResponse.isValidResponse()) {
-                    ApplicationState.setIsAuthenticated(true);
-                    ApplicationState.setClient(apiResponse.getData());
-                    Client client = ApplicationState.getClient();
-                    client.setRole(ClientRole.PROVIDER);
-                    return apiResponse;
-                }
-            }
-            else
-            apiResponse = (new ClientService()).consumer_login(clientId, password);
+
+            ApiResponse<Client> apiResponse = (new ClientService()).login(clientId, password);
             if (apiResponse.isValidResponse()) {
                 ApplicationState.setIsAuthenticated(true);
                 ApplicationState.setClient(apiResponse.getData());
-                Client client = ApplicationState.getClient();
-                client.setRole(ClientRole.CONSUMER);
-                return apiResponse;
-                }
-
+            }
 
 
             return apiResponse;

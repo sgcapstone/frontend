@@ -43,14 +43,6 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         return this;
     }
 
-    private String providerName;
-    public String getProviderName() {return providerName;}
-    public Client setProviderName(String providerName){
-        this.providerName = providerName;
-        return this;
-    }
-
-
     private String lastName;
     public String getLastName() {
         return lastName;
@@ -80,14 +72,6 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         this.address = address;
         return this;
     }
-
-    private String providerAddress;
-    public String getProviderAddressAddress() {return providerAddress;}
-    public Client setProviderAddress(String providerAddress){
-        this.providerAddress = providerAddress;
-        return this;
-    }
-
     private String city;
     public String getCity() {return city;}
     public Client setCity(String city){
@@ -95,27 +79,10 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         return this;
     }
 
-
-    private String providerCity;
-    public String getProviderCity() {return providerCity;}
-    public Client setProviderCity(String providerCity){
-        this.providerCity = providerCity;
-        return this;
-    }
-
-
     private String state;
     public String getState() {return state;}
     public Client setState(String state){
         this.state = state;
-        return this;
-    }
-
-
-    private String providerState;
-    public String getProviderState() {return providerState;}
-    public Client setProviderState(String providerState){
-        this.providerState = providerState;
         return this;
     }
 
@@ -125,12 +92,6 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         this.zip = zip;
         return this;
     }
-    private int providerZip;
-    public int getProviderZip(){return providerZip;}
-    public Client setProviderZip(int providerZip){
-        this.providerZip = providerZip;
-        return this;
-    }
 
     private int clientId;
     public int getClientId() {
@@ -138,13 +99,6 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
     }
     public Client setClientId(int clientId) {
         this.clientId = clientId;
-        return this;
-    }
-
-    private int providerId;
-    public int getProviderId(){return providerId;}
-    public Client setProviderId(int providerId){
-        this.providerId = providerId;
         return this;
     }
 
@@ -193,16 +147,11 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         return this;
     }
 
-    public static JSONObject convertLogInToJson(String clientId, String password, boolean role){
+    public static JSONObject convertLogInToJson(String clientId, String password){
         JSONObject jsonObject = new JSONObject();
 
         try {
-            if(role){
-                jsonObject.put(ClientFieldName.PROVIDER_ID.getFieldName(), clientId);
-            }
-            else if(!role){
-                jsonObject.put(ClientFieldName.CLIENT_ID.getFieldName(), clientId);
-            }
+            jsonObject.put(ClientFieldName.CLIENT_ID.getFieldName(), clientId);
             jsonObject.put(ClientFieldName.PASSWORD.getFieldName(), password);
         } catch (JSONException e) {
             e.printStackTrace();
@@ -217,19 +166,11 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         if (!StringUtils.isBlank(value)) {
             this.id = UUID.fromString(value);
         }
-        //this.password = rawJsonObject.optString(ClientFieldName.PASSWORD.getFieldName());
+        this.password = rawJsonObject.optString(ClientFieldName.PASSWORD.getFieldName());
         this.firstName = rawJsonObject.optString(ClientFieldName.FIRST_NAME.getFieldName());
-        if(this.firstName == ""){
-        this.providerName = rawJsonObject.optString(ClientFieldName.PROVIDER_NAME.getFieldName());
-        }
         this.lastName = rawJsonObject.optString(ClientFieldName.LAST_NAME.getFieldName());
         this.clientId = rawJsonObject.optInt(ClientFieldName.CLIENT_ID.getFieldName());
-        //this.active = rawJsonObject.optBoolean(ClientFieldName.ACTIVE.getFieldName());
-        this.address = rawJsonObject.optString(ClientFieldName.ADDRESS.getFieldName());
-        this.city = rawJsonObject.optString(ClientFieldName.CITY.getFieldName());
-        this.state = rawJsonObject.optString(ClientFieldName.STATE.getFieldName());
-        this.zip = rawJsonObject.optInt(ClientFieldName.ZIP.getFieldName());
-
+        this.active = rawJsonObject.optBoolean(ClientFieldName.ACTIVE.getFieldName());
 /*
         this.role = ClientRole.fromString(rawJsonObject.optString(ClientFieldName.ROLE.getFieldName()));
         if (this.role == null) {
@@ -237,11 +178,6 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         }
 */
         this.customerId = rawJsonObject.optString(ClientFieldName.CUSTOMER_ID.getFieldName());
-        this.phoneNumber = rawJsonObject.optString(ClientFieldName.PHONE.getFieldName());
-        if(this.phoneNumber == ""){
-            this.phoneNumber = rawJsonObject.optString(ClientFieldName.PROVIDER_NUMBER.getFieldName());
-        }
-        this.emailAddress = rawJsonObject.optString(ClientFieldName.EMAIL.getFieldName());
 
         value = rawJsonObject.optString(ClientFieldName.CREATED_AT.getFieldName());
         if (!StringUtils.isBlank(value)) {
@@ -269,12 +205,6 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         JSONObject jsonObject = new JSONObject();
 
         try {
-            if(role == ClientRole.PROVIDER){
-                jsonObject.put(ClientFieldName.PROVIDER_ID.getFieldName(), (this.customerId));
-            }
-            else if(role == ClientRole.CONSUMER){
-                jsonObject.put(ClientFieldName.CUSTOMER_ID.getFieldName(), this.customerId);
-            }
             jsonObject.put(ClientFieldName.ID.getFieldName(), this.id.toString());
             jsonObject.put(ClientFieldName.FIRST_NAME.getFieldName(), this.firstName);
             jsonObject.put(ClientFieldName.LAST_NAME.getFieldName(), this.lastName);
@@ -282,6 +212,7 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
             //jsonObject.put(ClientFieldName.ACTIVE.getFieldName(), this.active);
             //jsonObject.put(ClientFieldName.ROLE.getFieldName(), this.role.getValue());
             jsonObject.put(ClientFieldName.PASSWORD.getFieldName(), this.password.toString());
+            jsonObject.put(ClientFieldName.CUSTOMER_ID.getFieldName(), this.customerId);
             jsonObject.put(ClientFieldName.CREATED_AT.getFieldName(), (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US)).format(this.createdAt));
             jsonObject.put(ClientFieldName.UPDATED_AT.getFieldName(), (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.US)).format(this.createdAt));
         } catch (JSONException e) {
@@ -295,18 +226,9 @@ public class Client implements ConvertToJsonInterface, LoadFromJsonInterface<Cli
         this.id = new UUID(0, 0);
         this.password = "";
         this.firstName = "";
-        this.providerName = "";
         this.lastName = "";
         this.address = "";
-        this.providerAddress = "";
-        this.city = "";
-        this.providerCity = "";
-        this.state = "";
-        this.providerState = "";
-        this.zip =  0;
-        this.providerZip = 0;
         this.clientId = -1;
-        this.providerId = -1;
         this.active = false;
         this.role = ClientRole.CONSUMER;
         this.createdAt = new Date();

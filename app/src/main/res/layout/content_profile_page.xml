@@ -9,7 +9,6 @@ android:orientation="vertical"
 android:visibility="visible"
 tools:context="edu.uark.lawncareservicesapp.ProfilePage">
     <LinearLayout
-        android:id="@+id/List_Layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -43,9 +42,8 @@ tools:context="edu.uark.lawncareservicesapp.ProfilePage">
             android:id="@+id/FNBN_received"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Cuts by Carlos"
             android:paddingBottom="30dp"
-            android:visibility="visible" />
+            android:text="" />
 
 
         <TextView
@@ -62,8 +60,8 @@ tools:context="edu.uark.lawncareservicesapp.ProfilePage">
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="30dp"
-            android:text="Carlos and the Boys"
-            android:visibility="visible" />
+            android:text=""
+            />
 
         <TextView
             android:id="@+id/phone_number"
@@ -80,8 +78,8 @@ tools:context="edu.uark.lawncareservicesapp.ProfilePage">
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="30dp"
-            android:text="479-555-1000"
-            android:visibility="visible" />
+            android:text=""
+            />
 
 
         <TextView
@@ -89,18 +87,18 @@ tools:context="edu.uark.lawncareservicesapp.ProfilePage">
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:autoLink="email"
+            android:textColor="@android:color/black"
             android:paddingBottom="30dp"
             android:text="@string/profile_email_address"
-            android:textColor="@android:color/black" />
-
+            />
         <TextView
             android:id="@+id/E_receieved"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:ems="10"
             android:paddingBottom="30dp"
-            android:text="bossman@cbc.com"
-            android:visibility="visible" />
+            android:text=""
+            />
 
         <TextView
             android:id="@+id/address"
@@ -112,15 +110,14 @@ tools:context="edu.uark.lawncareservicesapp.ProfilePage">
             android:paddingBottom="30dp"
             android:text="@string/profile_street_address"
             />
-
         <TextView
             android:id="@+id/A_received"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:ems="10"
             android:paddingBottom="30dp"
-            android:text="123 Pennyworth Drive"
-            android:visibility="visible" />
+            android:text=""
+            />
         <TextView
             android:id="@+id/city"
             android:layout_width="match_parent"
@@ -131,15 +128,14 @@ tools:context="edu.uark.lawncareservicesapp.ProfilePage">
             android:paddingBottom="30dp"
             android:text="@string/profile_city"
             />
-
         <TextView
             android:id="@+id/C_received"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:ems="10"
             android:paddingBottom="30dp"
-            android:text="Near You"
-            android:visibility="visible" />
+            android:text=""
+            />
         <TextView
             android:id="@+id/state"
             android:layout_width="match_parent"
@@ -150,15 +146,14 @@ tools:context="edu.uark.lawncareservicesapp.ProfilePage">
             android:paddingBottom="30dp"
             android:text="@string/profile_state"
             />
-
         <TextView
             android:id="@+id/S_received"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:ems="10"
             android:paddingBottom="30dp"
-            android:text="AR"
-            android:visibility="visible" />
+            android:text=""
+            />
         <TextView
             android:id="@+id/zip"
             android:layout_width="match_parent"
@@ -169,14 +164,13 @@ tools:context="edu.uark.lawncareservicesapp.ProfilePage">
             android:paddingBottom="30dp"
             android:text="@string/profile_zip"
             />
-
         <TextView
             android:id="@+id/Z_received"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:ems="10"
             android:paddingBottom="30dp"
-            android:text="727XX"
-            android:visibility="visible" />
+            android:text=""
+            />
     </LinearLayout>
 </ScrollView>

@@ -17,7 +17,7 @@ import edu.uark.lawncareservicesapp.models.api.ApiResponse;
 import edu.uark.lawncareservicesapp.models.api.enums.ApiObject;
 import edu.uark.lawncareservicesapp.models.api.interfaces.PathElementInterface;
 
-public abstract class BaseRemoteService {
+abstract class BaseRemoteService {
 	URL buildPath() {
 		return this.buildPath((new PathElementInterface[0]), StringUtils.EMPTY);
 	}
@@ -272,17 +272,9 @@ public abstract class BaseRemoteService {
 		);
 	}
 
-	private void changeBaseURL(String newURL){
-		BASE_URL = "http://10.0.2.2:4000/api/" + newURL;
-
-	}
-	public String getBaseUrl(){
-		return BASE_URL;
-	}
-
 	private ApiObject apiObject;
 
-	public BaseRemoteService(ApiObject apiObject) {
+	BaseRemoteService(ApiObject apiObject) {
 		this.apiObject = apiObject;
 	}
 
@@ -300,10 +292,6 @@ public abstract class BaseRemoteService {
 	//private static final String BASE_URL = "http://finalcapstonedb.ccmat5myxbks.us-east-2.rds.amazonaws.com/";
 
 	// IF YOU ON STOCK ANDORID EMULATOR
-<<<<<<< HEAD
-	 private static String BASE_URL = "http://10.0.2.2:4000/api/";
-=======
 	private static final String BASE_URL = "http://192.168.0.5:4000/api/";
->>>>>>> master
 
 }

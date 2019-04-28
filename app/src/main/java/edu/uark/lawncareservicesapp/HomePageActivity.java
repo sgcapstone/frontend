@@ -97,7 +97,7 @@ public class HomePageActivity extends AppCompatActivity {
         // startActivity(new Intent(getApplicationContext(), TransactionActivity.class));
     }
     public void startSearchOnClick(View view){
-        startActivity(new Intent(getApplicationContext(), SearchActivity.class));
+        startActivity(new Intent(getApplicationContext(), TransactionAcitivty.class));
     }
 
     private TextView welcomeText;

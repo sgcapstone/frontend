@@ -24,48 +24,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="248dp"
         android:layout_marginEnd="107dp"
-        android:layout_marginBottom="8dp"
         android:onClick="startSearchOnClick"
         android:text="@string/homepage_button_search"
-        app:layout_constraintBottom_toTopOf="@+id/ProfilePage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
-        app:layout_constraintVertical_bias="0.706" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/ListofServices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="248dp"
         android:layout_marginEnd="107dp"
         android:onClick="startListOnClick"
         android:text="@string/homepage_button_list_of_services"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/ProfilePage"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="117dp"
-        android:layout_marginTop="76dp"
         android:layout_marginEnd="117dp"
-        android:layout_marginBottom="8dp"
         android:onClick="ProfilePageOnClick"
-        android:text="@string/homepage_button_profile_page"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/homepage_button_create_client"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ListofServices"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:layout_editor_absoluteY="328dp" />
 
     <TextView
         android:id="@+id/welcomeText"
