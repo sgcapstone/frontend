@@ -1,5 +1,10 @@
 package edu.uark.lawncareservicesapp;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> parent of 2692c1b... Fix
 import android.annotation.TargetApi;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -9,8 +14,16 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+<<<<<<< HEAD
 import android.util.Log;
 import android.view.View;
+=======
+
+import android.util.Log;
+
+import android.view.View;
+
+>>>>>>> parent of 2692c1b... Fix
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,6 +31,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import edu.uark.lawncareservicesapp.models.api.ApiResponse;
+<<<<<<< HEAD
 import edu.uark.lawncareservicesapp.models.api.services.ProviderService;
 import edu.uark.lawncareservicesapp.models.api.Provider;
 
@@ -30,6 +44,21 @@ public class SearchActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle(R.string.app_bar_title);
+=======
+import edu.uark.lawncareservicesapp.models.api.services.ClientService;
+import edu.uark.lawncareservicesapp.models.api.Client;
+
+
+public class SearchActivity extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_search);
+
+>>>>>>> parent of 2692c1b... Fix
 
         name = (EditText) findViewById(R.id.edit_text_provider_name);
         city = (EditText) findViewById(R.id.edit_text_city_name);
@@ -38,11 +67,16 @@ public class SearchActivity extends AppCompatActivity {
 
         Button searchButton = findViewById(R.id.search_button);
         searchButton.setOnClickListener(new View.OnClickListener() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 2692c1b... Fix
             @Override
             public void onClick(View view) {
                 attemptSearch();
             }
         });
+<<<<<<< HEAD
 
         (new ProviderCheckTask()).execute();
 
@@ -55,6 +89,12 @@ public class SearchActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         }
     }
+=======
+        
+    }
+
+
+>>>>>>> parent of 2692c1b... Fix
 
     private void attemptSearch() {
 
@@ -64,22 +104,36 @@ public class SearchActivity extends AppCompatActivity {
             mAuthTask.execute("name", this.name.getText().toString());
 
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 2692c1b... Fix
         else if (!this.city.getText().toString().equals("")) {
             // Perform search by city
             mAuthTask = new ProviderSearchTask();
             mAuthTask.execute("city", this.city.getText().toString());
 
+<<<<<<< HEAD
         }
+=======
+
+        }
+
+>>>>>>> parent of 2692c1b... Fix
         else if (!this.service.getText().toString().equals("")) {
             // Perform search by services offered
             mAuthTask = new ProviderSearchTask();
             mAuthTask.execute("services", this.service.getText().toString());
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 2692c1b... Fix
         }
         // Display error if there are no search results.
     }
 
 
+<<<<<<< HEAD
     public class ProviderCheckTask extends AsyncTask<Void, Void, ApiResponse<Integer>> {
 
         @Override
@@ -148,6 +202,27 @@ public class SearchActivity extends AppCompatActivity {
                 apiResponseList = new ProviderService().findProvidersByServices(searchValue);
             }
 
+=======
+    public class ProviderSearchTask extends AsyncTask<String, Void, ApiResponse<Client>> {
+
+        @Override
+        protected ApiResponse<Client> doInBackground(String... params) {
+            String searchMethod = params[0];
+            String searchValue = params[1];
+            ApiResponse<Client> apiResponse = new ApiResponse<>();
+            ApiResponse<List<Client>> apiResponseList = new ApiResponse<>();
+            apiResponseListFlag = false;
+
+            if (searchMethod.equals("name")) {
+                apiResponseList = new ClientService(ApplicationState.getClient().getRole()).findProvidersByName(searchValue);
+            }
+            else if (searchMethod.equals("city")) {
+                apiResponseList = new ClientService(ApplicationState.getClient().getRole()).findProvidersByCity(searchValue);
+            }
+            else if (searchMethod.equals("services")) {
+                apiResponseList = new ClientService(ApplicationState.getClient().getRole()).findProvidersByServices(searchValue);
+            }
+>>>>>>> parent of 2692c1b... Fix
             /*if (apiResponse.isValidResponse() && !apiResponseListFlag) {
                 ApplicationState.setIsAuthenticated(true);
                 ApplicationState.setProvider(apiResponse.getData());
@@ -162,6 +237,7 @@ public class SearchActivity extends AppCompatActivity {
                     if (size > 0) { apiResponseListFlag = true; }
                 }
                 catch (Exception e) { }
+<<<<<<< HEAD
 
             }
 
@@ -177,6 +253,17 @@ public class SearchActivity extends AppCompatActivity {
 
             if (!apiResponseListFlag) {
 
+=======
+            }
+            // Pointless return statement.
+            return apiResponse;
+        }
+
+        @Override
+        protected void onPostExecute(ApiResponse<Client> apiResponse) {
+            this.loadingSearchResultsAlert.dismiss();
+            if (!apiResponseListFlag) {
+>>>>>>> parent of 2692c1b... Fix
                 new AlertDialog.Builder(that).
                         setMessage(R.string.provider_check_error).
                         setPositiveButton(
@@ -195,10 +282,15 @@ public class SearchActivity extends AppCompatActivity {
                 startActivity(homepage);
                 finish();
             }
+<<<<<<< HEAD
 
             mAuthTask = null;
         }
 
+=======
+            mAuthTask = null;
+        }
+>>>>>>> parent of 2692c1b... Fix
         private AlertDialog loadingSearchResultsAlert;
 
         private ProviderSearchTask() {
@@ -215,4 +307,9 @@ public class SearchActivity extends AppCompatActivity {
     private SearchActivity that = this;
     private ProviderSearchTask mAuthTask = null;
     private boolean apiResponseListFlag;
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> parent of 2692c1b... Fix

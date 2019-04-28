@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 2692c1b... Fix
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -14,6 +18,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+<<<<<<< HEAD
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,6 +36,41 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Provider provider;
     private double lat;
     private double longi;
+=======
+
+
+import org.json.JSONArray;
+
+import org.json.JSONException;
+
+import org.json.JSONObject;
+
+
+
+import java.io.BufferedReader;
+
+import java.io.InputStreamReader;
+
+import java.net.HttpURLConnection;
+
+import java.net.URL;
+
+
+
+import edu.uark.lawncareservicesapp.models.api.Client;
+
+
+
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+
+
+    private GoogleMap mMap;
+    private Client client;
+    private double lat;
+    private double longi;
+    private boolean searchCompleteFlag;
+
+>>>>>>> parent of 2692c1b... Fix
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +83,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 2692c1b... Fix
     private class GetLocationLatLong extends AsyncTask<String, Integer, String> {
 
         protected String doInBackground(String... urls) {
@@ -77,11 +121,48 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
         protected void onPostExecute(String results) {
+<<<<<<< HEAD
             Log.d("LATLONG", results);
+=======
+            searchCompleteFlag = true;
+            startMap(mMap);
         }
 
     }
 
+
+
+
+    public boolean setLatLong(JSONObject jsonObject) {
+
+
+        try {
+
+
+            this.longi = ((JSONArray) jsonObject.get("results")).getJSONObject(0)
+
+                    .getJSONObject("geometry").getJSONObject("location")
+
+                    .getDouble("lng");
+
+            this.lat = ((JSONArray) jsonObject.get("results")).getJSONObject(0)
+
+                    .getJSONObject("geometry").getJSONObject("location")
+
+                    .getDouble("lat");
+
+
+        } catch (JSONException e) {
+
+            return false;
+
+
+>>>>>>> parent of 2692c1b... Fix
+        }
+
+    }
+
+<<<<<<< HEAD
     public  boolean setLatLong(JSONObject jsonObject) {
 
         try {
@@ -130,6 +211,60 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.moveCamera(CameraUpdateFactory.newLatLng(location));
         }
         catch (Exception e) {
+=======
+
+    /**
+     * Manipulates the map once available.
+     * <p>
+     * This callback is triggered when the map is ready to be used.
+     * <p>
+     * This is where we can add markers or lines, add listeners or move the camera. In this case,
+     * <p>
+     * we just add a marker near Sydney, Australia.
+     * <p>
+     * If Google Play services is not installed on the device, the user will be prompted to install
+     * <p>
+     * it inside the SupportMapFragment. This method will only be triggered once the user has
+     * <p>
+     * installed Google Play services and returned to the app.
+     */
+
+    @Override
+
+    public void onMapReady(GoogleMap googleMap) {
+
+        int index = getIntent().getIntExtra("index", 0);
+        this.client = ApplicationState.getProviderList().get(index);
+
+        String address = client.getAddress() + "+" + client.getCity() + "+" + client.getState() + "+" + client.getZip();
+        String address2 = address.replaceAll("\\s", "");
+        new GetLocationLatLong().execute(address2);
+        mMap = googleMap;
+    }
+
+    public void startMap(GoogleMap googleMap) {
+        if (this.lat == 0 || this.longi == 0) {
+            new AlertDialog.Builder(this).
+                    setTitle(R.string.failed_to_load_map).
+                    setMessage(R.string.failed_to_load_map).
+                    setPositiveButton(
+                            R.string.button_ok,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.dismiss();
+                                }
+                            }
+                    ).
+                    create().
+                    show();
+            return;
+        }
+        try {
+            LatLng location = new LatLng(this.lat, this.longi);
+            mMap.addMarker(new MarkerOptions().position(location).title(client.getProviderName()));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 14));
+        } catch (Exception e) {
+>>>>>>> parent of 2692c1b... Fix
             new AlertDialog.Builder(this).
                     setTitle(R.string.failed_to_load_map).
                     setMessage(R.string.failed_to_load_map).
@@ -145,4 +280,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     show();
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> parent of 2692c1b... Fix

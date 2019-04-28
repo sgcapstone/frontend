@@ -99,6 +99,10 @@
     <string name="profile_state">State</string>
     <string name="profile_zip">Zip</string>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 2692c1b... Fix
     <!-- Strings related to Search Page -->
     <string name="title_activity_search">SearchActivity</string>
     <string name="search_button">Find Services</string>
@@ -114,7 +118,13 @@
     <string name="text_view_title">Search By:</string>
     <string name="text_view_or">Or</string>
     <string name="app_bar_title"></string>
+<<<<<<< HEAD
 
     <string name="google_api_key">AIzaSyBuGVsbcnf6N8ceEuMec-RGGyi5AFpz_LY</string>
     <string name="failed_to_load_map">Location not found</string>
+=======
+    <string name="google_api_key">AIzaSyBuGVsbcnf6N8ceEuMec-RGGyi5AFpz_LY</string>
+    <string name="failed_to_load_map">Location not found</string>
+    <string name="text_view_search_results_title">Available Providers:</string>
+>>>>>>> parent of 2692c1b... Fix
 </resources>

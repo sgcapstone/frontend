@@ -60,7 +60,6 @@ public class HomePageActivity extends AppCompatActivity {
                 break;
         }
 
-
     }
 
     private void startLoginActivity() {
